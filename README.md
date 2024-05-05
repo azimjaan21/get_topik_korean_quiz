@@ -5,6 +5,8 @@ Quiz app for Get Topik Korean Language Centre. In this app, you can learn korean
 Name : Get Topik Korean Quiz (only for now, might be changed later...)
 Tools: Dar (Flutter) + Firebase.
 
+![image](https://github.com/azimjaan21/get_topik_korean_quiz/assets/117064407/fcbde6f7-b624-4f19-99a0-445a2b7c4c02)
+
 
 ## Getting Started
 
