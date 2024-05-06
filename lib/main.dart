@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:get_topik_korean_quiz/pages/home.dart';
+// import 'package:get_topik_korean_quiz/pages/home.dart';
+import 'package:get_topik_korean_quiz/pages/splash.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
       ),
-      home: const HomeScreen(),
+      home: const SplashScreen(),//HomeScreen(),
     );
   }
 }
