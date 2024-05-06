@@ -11,6 +11,12 @@ Tools: Dar (Flutter) + Firebase.
 
 
 ## Getting Started
+#Day 1 -> Creating UI (Home Screen + Splash Screen + etc...)
+
+![image](https://github.com/azimjaan21/get_topik_korean_quiz/assets/117064407/46383098-b3af-4280-b23b-ddd3b39f8c14) ![image](https://github.com/azimjaan21/get_topik_korean_quiz/assets/117064407/79253cc3-6261-445c-89af-b7e444a16684)
+
+
+
 
 This project is a starting point for a Flutter application.
 
