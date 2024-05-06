@@ -1,7 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:get_topik_korean_quiz/tools/styles.dart';
-import 'package:get_topik_korean_quiz/widgets/neumorph_container.dart';
-import 'package:get_topik_korean_quiz/widgets/top_bar.dart';
+import 'package:get_topik_korean_quiz/tools/file_importer.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -18,33 +15,36 @@ class HomeScreen extends StatelessWidget {
               children: [
                 TopBarGetTopik(),
                 SizedBox(height: 20),
-               
                 NeumorphContainer(
                   nchild: Text(
                     "초급 1",
                     style: bannerText,
-                  ), countNumchild: Text(" 300 ta so'z"),
+                  ),
+                  countNumchild: Text(" 300 ta so'z"),
                 ),
                 SizedBox(height: 20),
                 NeumorphContainer(
                   nchild: Text(
                     "초급 2",
                     style: bannerText,
-                  ), countNumchild: Text(" 300 ta so'z"),
+                  ),
+                  countNumchild: Text(" 300 ta so'z"),
                 ),
                 SizedBox(height: 20),
-                 NeumorphContainer(
+                NeumorphContainer(
                   nchild: Text(
                     "초급 1",
                     style: bannerText,
-                  ), countNumchild:Text(" 300 ta so'z"),
+                  ),
+                  countNumchild: Text(" 300 ta so'z"),
                 ),
                 SizedBox(height: 20),
                 NeumorphContainer(
                   nchild: Text(
                     "초급 2",
                     style: bannerText,
-                  ), countNumchild:Text(" 300 ta so'z"),
+                  ),
+                  countNumchild: Text(" 300 ta so'z"),
                 ),
                 SizedBox(height: 20),
               ],

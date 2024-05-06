@@ -1,8 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:get_topik_korean_quiz/pages/error/not_founded.dart';
-import 'package:get_topik_korean_quiz/pages/home/gettopik1/gettopik1.dart';
-import 'package:get_topik_korean_quiz/pages/home/gettopik2/gettopik1.dart';
-import 'package:get_topik_korean_quiz/pages/home/home.dart';
+import 'package:get_topik_korean_quiz/tools/file_importer.dart';
 
 abstract class RouteName {
   static const home = '/home';

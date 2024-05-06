@@ -1,5 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:get_topik_korean_quiz/pages/splash.dart';
+import 'package:get_topik_korean_quiz/tools/file_importer.dart';
 
 void main() {
   runApp(const MyApp());

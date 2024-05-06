@@ -1,6 +1,4 @@
-import 'package:animated_splash_screen/animated_splash_screen.dart';
-import 'package:flutter/material.dart';
-import 'package:get_topik_korean_quiz/pages/home/home.dart';
+import 'package:get_topik_korean_quiz/tools/file_importer.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});
