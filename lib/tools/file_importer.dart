@@ -9,3 +9,4 @@ export 'package:animated_splash_screen/animated_splash_screen.dart';
 export 'package:get_topik_korean_quiz/tools/styles.dart';
 export 'package:get_topik_korean_quiz/widgets/neumorph_container.dart';
 export 'package:get_topik_korean_quiz/widgets/top_bar.dart';
+export 'package:get_topik_korean_quiz/tools/router.dart';

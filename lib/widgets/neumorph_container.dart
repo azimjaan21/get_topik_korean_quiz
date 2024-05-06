@@ -3,13 +3,14 @@ import 'package:get_topik_korean_quiz/tools/file_importer.dart';
 class NeumorphContainer extends StatelessWidget {
   final Widget nchild;
   final Widget countNumchild;
+  final Function() onTap;
   const NeumorphContainer(
-      {super.key, required this.nchild, required this.countNumchild});
+      {super.key, required this.nchild, required this.countNumchild, required this.onTap});
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: null,
+    return InkWell(
+      onTap: onTap,
       child: Container(
         width: MediaQuery.sizeOf(context).width * 0.9,
         height: 150,

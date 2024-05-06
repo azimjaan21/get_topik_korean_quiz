@@ -11,8 +11,6 @@ abstract class RouteName {
 class RouterNavigator {
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
-      case RouteName.home:
-        return MaterialPageRoute(builder: (_) => const HomeScreen());
 
       case RouteName.getTopik1:
         return MaterialPageRoute(builder: (_) => const GetTopik1());

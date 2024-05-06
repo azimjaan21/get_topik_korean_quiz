@@ -5,10 +5,13 @@ class NotFounded404Screen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Center(
-      child: Text(
-        "NotFounded404. Please, check your network or try again!",
-        style: bannerText,
+    return const Scaffold(
+      body: Center(
+        child: Text(
+          textAlign: TextAlign.center,
+          "NotFounded404.\nPlease, check your network or try again!",
+          style: bannerText,
+        ),
       ),
     );
   }
