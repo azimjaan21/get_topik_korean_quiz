@@ -1,14 +1,15 @@
 import 'package:get_topik_korean_quiz/tools/file_importer.dart';
 
 class MyAppBar extends StatelessWidget {
-  const MyAppBar({super.key});
+  final String title;
+  const MyAppBar({super.key, required this.title});
 
   @override
   Widget build(BuildContext context) {
-    return const Row(
+    return  Row(
       children: [
         Text(
-          "초급 1",
+          title,
           style: bannerText,
         ),
       ],

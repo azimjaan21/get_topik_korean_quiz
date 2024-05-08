@@ -11,7 +11,7 @@ class GetTopik1 extends StatelessWidget {
           body: SingleChildScrollView(
         child: Column(
           children: [
-            MyAppBar(),
+            MyAppBar(title: '초급 1',),
           ],
         ),
       )),
