@@ -1,5 +1,5 @@
 import 'package:get_topik_korean_quiz/tools/file_importer.dart';
-import 'package:get_topik_korean_quiz/widgets/appbar/appbar.dart';
+
 
 class GetTopik1 extends StatelessWidget {
   const GetTopik1({super.key});
@@ -12,6 +12,8 @@ class GetTopik1 extends StatelessWidget {
         child: Column(
           children: [
             MyAppBar(title: '초급 1',),
+            UnitCard(),
+           
           ],
         ),
       )),

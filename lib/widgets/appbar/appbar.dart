@@ -6,13 +6,17 @@ class MyAppBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Row(
-      children: [
-        Text(
-          title,
-          style: bannerText,
-        ),
-      ],
+    return  Padding(
+      padding: const EdgeInsets.symmetric(vertical: 10),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Text(
+            title,
+            style: bannerText,
+          ),
+        ],
+      ),
     );
   }
 }
