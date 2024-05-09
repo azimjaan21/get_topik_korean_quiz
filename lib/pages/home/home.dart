@@ -1,4 +1,5 @@
 import 'package:get_topik_korean_quiz/tools/file_importer.dart';
+
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
@@ -12,29 +13,24 @@ class HomeScreen extends StatelessWidget {
             width: MediaQuery.sizeOf(context).width,
             child: Column(
               children: [
-                
                 const TopBarGetTopik(),
+
                 /// Top ///
                 const SizedBox(height: 20),
-                NeumorphContainer(
-                  nchild: const Text(
-                    "초급 1",
-                    style: bannerText,
-                  ),
-                  countNumchild: const Text(" 300 ta so'z"),
-                  onTap: () =>
-                        Navigator.of(context).pushNamed(RouteName.getTopik1),
-                ),
-                const SizedBox(height: 20),
-
-                NeumorphContainer(
-                  nchild: const Text(
-                    "초급 2",
-                    style: bannerText,
-                  ),
-                  countNumchild: const Text(" 300 ta so'z"),
-                  onTap: () =>
-                        Navigator.of(context).pushNamed(RouteName.getTopik1),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    NeumorphContainer(
+                      bookTitle: 'assets/images/book1.png',
+                      onTap: () =>
+                          Navigator.of(context).pushNamed(RouteName.getTopik1),
+                    ),
+                    NeumorphContainer(
+                      bookTitle: 'assets/images/book2.png',
+                      onTap: () =>
+                          Navigator.of(context).pushNamed(RouteName.getTopik2),
+                    ),
+                  ],
                 ),
               ],
             ),

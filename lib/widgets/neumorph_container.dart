@@ -1,27 +1,26 @@
 import 'package:get_topik_korean_quiz/tools/file_importer.dart';
 
 class NeumorphContainer extends StatelessWidget {
-  final Widget nchild;
-  final Widget countNumchild;
+  final String bookTitle;
   final Function() onTap;
   const NeumorphContainer(
-      {super.key, required this.nchild, required this.countNumchild, required this.onTap});
+      {super.key, required this.onTap, required this.bookTitle});
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
       onTap: onTap,
       child: Container(
-        width: MediaQuery.sizeOf(context).width * 0.9,
-        height: 150,
+        width: 135,
+        height: 180,
         decoration: BoxDecoration(
-          image: const DecorationImage(
+          image: DecorationImage(
               image: AssetImage(
-                'assets/images/banner.png',
+                bookTitle,
               ),
               fit: BoxFit.cover),
           color: Colors.grey[200],
-          borderRadius: BorderRadius.circular(20),
+          borderRadius: BorderRadius.circular(10),
           boxShadow: const [
             BoxShadow(
               color: Color.fromRGBO(189, 189, 189, 1),
@@ -36,17 +35,6 @@ class NeumorphContainer extends StatelessWidget {
               spreadRadius: 1.0,
             ),
           ],
-        ),
-        child: Padding(
-          padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 20),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: [
-              nchild,
-              countNumchild,
-            ],
-          ),
         ),
       ),
     );
