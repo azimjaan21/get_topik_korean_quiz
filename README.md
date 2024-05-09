@@ -16,8 +16,8 @@ Tools: Dar (Flutter) + Firebase.
 ![image](https://github.com/azimjaan21/get_topik_korean_quiz/assets/117064407/46383098-b3af-4280-b23b-ddd3b39f8c14) ![image](https://github.com/azimjaan21/get_topik_korean_quiz/assets/117064407/79253cc3-6261-445c-89af-b7e444a16684)
 
 #Day 2 -> Working on Fabelous UI
-![Screenshot 2024-05-10 023947](https://github.com/azimjaan21/get_topik_korean_quiz/assets/117064407/b23c9d1a-4fa1-4c39-b49b-9f0f29f4afad) 
-![Screenshot 2024-05-10 023831](https://github.com/azimjaan21/get_topik_korean_quiz/assets/117064407/a7546f04-ef67-447b-82d3-f3fb8f470ce8)
+
+![Screenshot 2024-05-10 023947](https://github.com/azimjaan21/get_topik_korean_quiz/assets/117064407/b23c9d1a-4fa1-4c39-b49b-9f0f29f4afad) ![Screenshot 2024-05-10 023831](https://github.com/azimjaan21/get_topik_korean_quiz/assets/117064407/a7546f04-ef67-447b-82d3-f3fb8f470ce8)
 
 
 
