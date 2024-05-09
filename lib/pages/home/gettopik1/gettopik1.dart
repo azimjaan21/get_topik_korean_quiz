@@ -25,7 +25,7 @@ class GetTopik1 extends StatelessWidget {
               ),
               UnitCard(
                 unitTitle: '이 사람은 누구에요?',
-                unitImage: "assets/images/unit2_3.jpg",
+                unitImage: "assets/images/unit2_3.png",
                 unitNumber: '2.3',
               ),
               UnitCard(
@@ -40,7 +40,7 @@ class GetTopik1 extends StatelessWidget {
               ),
               UnitCard(
                 unitTitle: '주말에 무엇을 했어요 ?',
-                unitImage: "assets/images/unit3_3.jpg",
+                unitImage: "assets/images/unit3_3.png",
                 unitNumber: '3.3',
               ),
               UnitCard(
