@@ -10,3 +10,9 @@ const subbannerText = TextStyle(
   fontSize: 18,
   fontWeight: FontWeight.bold,
 );
+
+const cardText = TextStyle(
+  color: Colors.white,
+  fontSize: 18,
+  fontWeight: FontWeight.bold,
+);
