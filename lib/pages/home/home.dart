@@ -1,4 +1,5 @@
 import 'package:get_topik_korean_quiz/tools/file_importer.dart';
+import 'package:get_topik_korean_quiz/widgets/random_card.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -14,24 +15,49 @@ class HomeScreen extends StatelessWidget {
             child: Column(
               children: [
                 const TopBarGetTopik(),
-
-                /// Top ///
-                const SizedBox(height: 20),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    NeumorphContainer(
-                      bookTitle: 'assets/images/book1.png',
-                      onTap: () =>
-                          Navigator.of(context).pushNamed(RouteName.getTopik1),
-                    ),
-                    NeumorphContainer(
-                      bookTitle: 'assets/images/book2.png',
-                      onTap: () =>
-                          Navigator.of(context).pushNamed(RouteName.getTopik2),
-                    ),
-                  ],
+                Padding(
+                  padding: const EdgeInsets.only(
+                    top: 20,
+                    bottom: 7,
+                  ),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      NeumorphContainer(
+                        bookTitle: 'assets/images/book1.png',
+                        onTap: () => Navigator.of(context)
+                            .pushNamed(RouteName.getTopik1),
+                      ),
+                      NeumorphContainer(
+                        bookTitle: 'assets/images/book2.png',
+                        onTap: () => Navigator.of(context)
+                            .pushNamed(RouteName.getTopik2),
+                      ),
+                    ],
+                  ),
                 ),
+                const Divider(),
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 7),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      NeumorphContainer(
+                        bookTitle: 'assets/images/book1.png',
+                        onTap: () => Navigator.of(context)
+                            .pushNamed(RouteName.getTopik1),
+                      ),
+                      NeumorphContainer(
+                        bookTitle: 'assets/images/book2.png',
+                        onTap: () => Navigator.of(context)
+                            .pushNamed(RouteName.getTopik2),
+                      ),
+                    ],
+                  ),
+                ),
+               const Divider(),
+                const SizedBox(height: 20,),
+               const RandomQuizCard(),
               ],
             ),
           ),

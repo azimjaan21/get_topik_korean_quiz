@@ -7,12 +7,24 @@ const bannerText = TextStyle(
 
 const subbannerText = TextStyle(
   color: Colors.white,
-  fontSize: 18,
+  fontSize: 25,
   fontWeight: FontWeight.bold,
 );
 
 const cardText = TextStyle(
   color: Colors.white,
+  fontSize: 18,
+  fontWeight: FontWeight.bold,
+);
+
+const randomTexth1 = TextStyle(
+  color: Colors.white,
+  fontSize: 20,
+  fontWeight: FontWeight.bold,
+);
+
+const randomTexth2 = TextStyle(
+  color: Colors.amber,
   fontSize: 18,
   fontWeight: FontWeight.bold,
 );
