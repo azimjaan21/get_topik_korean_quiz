@@ -58,6 +58,21 @@ class GetTopik1 extends StatelessWidget {
                 unitImage: "assets/images/unit4_3.jpg",
                 unitNumber: '4.3',
               ),
+               UnitCard(
+                unitTitle: '여행을 가고 싶어요',
+                unitImage: "assets/images/unit5_1.jpg",
+                unitNumber: '5.1',
+              ),
+               UnitCard(
+                unitTitle: '영화를 보려고 해요',
+                unitImage: "assets/images/unit5_2.jpg",
+                unitNumber: '5.2',
+              ),
+               UnitCard(
+                unitTitle: '여행을 가고 싶어요',
+                unitImage: "assets/images/unit5_3.jpg",
+                unitNumber: '5.3',
+              ),
             ],
           ),
         ),
