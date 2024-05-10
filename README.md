@@ -19,6 +19,10 @@ Tools: Dart (Flutter) + Firebase.
 
 ![Screenshot 2024-05-10 023947](https://github.com/azimjaan21/get_topik_korean_quiz/assets/117064407/b23c9d1a-4fa1-4c39-b49b-9f0f29f4afad) ![Screenshot 2024-05-10 023831](https://github.com/azimjaan21/get_topik_korean_quiz/assets/117064407/a7546f04-ef67-447b-82d3-f3fb8f470ce8)
 
+#Day 3 -> Connecting Audio feature ( Korean TTS )
+
+![image](https://github.com/azimjaan21/get_topik_korean_quiz/assets/117064407/ee0df0f1-7574-474a-a11c-76549208b4b5)
+
 
 
 
