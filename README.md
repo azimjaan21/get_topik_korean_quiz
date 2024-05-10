@@ -2,10 +2,10 @@
 
 **Quiz app for Get Topik Korean Language Centre.** 
 
-In this app, you can learn korean vocabularies from beginner to advanced. This project is my own idea. Because I'm attending this Korean Language (Get Topik) these days. And my teacher is giving homework to learn korean words. So I decided to create kinda educational app with flutter to give more conveniece to remember vocabularies.
+In this app, you can learn korean vocabularies from beginner to advanced. This project is my own idea. Because I'm attending this Korean Language course (Get Topik) these days. And my teacher is giving homework to learn korean words. So I decided to create kinda educational app with flutter to give more conveniece to remember vocabularies.
 
 Name : **Get Topik Korean Quiz** (only for now, might be changed later...)
-Tools: Dar (Flutter) + Firebase.
+Tools: Dart (Flutter) + Firebase.
 
 ![image](https://github.com/azimjaan21/get_topik_korean_quiz/assets/117064407/fcbde6f7-b624-4f19-99a0-445a2b7c4c02)
 
@@ -14,6 +14,10 @@ Tools: Dar (Flutter) + Firebase.
 #Day 1 -> Creating UI (Home Screen + Splash Screen + etc...)
 
 ![image](https://github.com/azimjaan21/get_topik_korean_quiz/assets/117064407/46383098-b3af-4280-b23b-ddd3b39f8c14) ![image](https://github.com/azimjaan21/get_topik_korean_quiz/assets/117064407/79253cc3-6261-445c-89af-b7e444a16684)
+
+#Day 2 -> Working on Fabelous UI
+
+![Screenshot 2024-05-10 023947](https://github.com/azimjaan21/get_topik_korean_quiz/assets/117064407/b23c9d1a-4fa1-4c39-b49b-9f0f29f4afad) ![Screenshot 2024-05-10 023831](https://github.com/azimjaan21/get_topik_korean_quiz/assets/117064407/a7546f04-ef67-447b-82d3-f3fb8f470ce8)
 
 
 
