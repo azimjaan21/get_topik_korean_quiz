@@ -57,7 +57,8 @@ class HomeScreen extends StatelessWidget {
                 ),
                const Divider(),
                 const SizedBox(height: 20,),
-               const RandomQuizCard(),
+                RandomQuizCard(onTap:  () => Navigator.of(context)
+                            .pushNamed(RouteName.randomQuiz),),
               ],
             ),
           ),

@@ -1,14 +1,13 @@
-import 'package:flutter/material.dart';
-import 'package:get_topik_korean_quiz/tools/colors.dart';
 import 'package:get_topik_korean_quiz/tools/file_importer.dart';
 
 class RandomQuizCard extends StatelessWidget {
-  const RandomQuizCard({super.key});
+  final Function() onTap;
+  const RandomQuizCard({super.key, required this.onTap});
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: null,
+      onTap: onTap,
       child: Container(
         width: MediaQuery.sizeOf(context).width * 0.8,
         height: 180,
