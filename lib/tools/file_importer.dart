@@ -12,3 +12,5 @@ export 'package:get_topik_korean_quiz/widgets/top_bar.dart';
 export 'package:get_topik_korean_quiz/tools/router.dart';
 export 'package:get_topik_korean_quiz/widgets/appbar/appbar.dart';
 export 'package:get_topik_korean_quiz/widgets/unit_card.dart';
+export 'package:get_topik_korean_quiz/widgets/random/random_appbar.dart';
+export 'package:get_topik_korean_quiz/widgets/audio/speech_card.dart';

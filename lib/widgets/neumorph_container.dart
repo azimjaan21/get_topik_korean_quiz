@@ -9,6 +9,7 @@ class NeumorphContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
+      borderRadius: BorderRadius.circular(10),
       onTap: onTap,
       child: Container(
         width: 135,

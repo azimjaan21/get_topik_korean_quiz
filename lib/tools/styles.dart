@@ -28,3 +28,9 @@ const randomTexth2 = TextStyle(
   fontSize: 18,
   fontWeight: FontWeight.bold,
 );
+
+const quizWord = TextStyle(
+  color: Colors.black,
+  fontSize: 25,
+  fontWeight: FontWeight.bold,
+);
