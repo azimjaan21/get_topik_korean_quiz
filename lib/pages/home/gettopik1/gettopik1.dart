@@ -7,6 +7,7 @@ class GetTopik1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return const SafeArea(
       child: Scaffold(
+        backgroundColor: Color(0xFFE0E0E0),
         body: SingleChildScrollView(
           child: Column(
             children: [

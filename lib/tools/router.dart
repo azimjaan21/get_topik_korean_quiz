@@ -1,4 +1,5 @@
-import 'package:get_topik_korean_quiz/pages/random/random_quiz.dart';
+import 'package:get_topik_korean_quiz/pages/random_quiz/random_quiz.dart';
+import 'package:get_topik_korean_quiz/pages/unit_quiz/unit_quiz_screen.dart';
 import 'package:get_topik_korean_quiz/tools/file_importer.dart';
 
 abstract class RouteName {
@@ -8,6 +9,7 @@ abstract class RouteName {
   static const getTopik1 = '/getTopik1';
   static const getTopik2 = '/getTopik2';
   static const randomQuiz = '/randomQuiz';
+  static const unitQuiz = '/unitQuiz';
 }
 
 class RouterNavigator {
@@ -19,8 +21,11 @@ class RouterNavigator {
       case RouteName.getTopik2:
         return MaterialPageRoute(builder: (_) => const GetTopik2());
 
-        case RouteName.randomQuiz:
+      case RouteName.randomQuiz:
         return MaterialPageRoute(builder: (_) => const RandomQuizScreen());
+
+      case RouteName.unitQuiz:
+        return MaterialPageRoute(builder: (_) => const UnitQuizScreen());
 
       // If smth is wrong here, this screen give info:
       default:

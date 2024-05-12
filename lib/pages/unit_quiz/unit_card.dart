@@ -3,15 +3,19 @@ import 'package:get_topik_korean_quiz/tools/file_importer.dart';
 class UnitCard extends StatelessWidget {
   final String unitTitle;
   final String unitImage;
-    final String unitNumber;
+  final String unitNumber;
 
-  const UnitCard({super.key, required this.unitTitle, required this.unitImage, required this.unitNumber});
+  const UnitCard(
+      {super.key,
+      required this.unitTitle,
+      required this.unitImage,
+      required this.unitNumber});
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
       borderRadius: BorderRadius.circular(20),
-      onTap: null,
+      onTap: () => Navigator.of(context).pushNamed(RouteName.unitQuiz),
       child: Padding(
         padding: const EdgeInsets.symmetric(vertical: 8.0),
         child: Stack(
@@ -57,7 +61,7 @@ class UnitCard extends StatelessWidget {
                 ),
               ),
             ),
-             Positioned(
+            Positioned(
               top: 5,
               left: 5,
               child: Card(
