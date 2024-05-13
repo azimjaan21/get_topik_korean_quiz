@@ -1,5 +1,5 @@
-import 'package:get_topik_korean_quiz/pages/random_quiz/random_quiz.dart';
-import 'package:get_topik_korean_quiz/pages/unit_quiz/unit_quiz_screen.dart';
+import 'package:get_topik_korean_quiz/screens/random_quiz/random_quiz.dart';
+import 'package:get_topik_korean_quiz/screens/unit_quiz/unit_quiz_screen.dart';
 import 'package:get_topik_korean_quiz/tools/file_importer.dart';
 
 abstract class RouteName {
