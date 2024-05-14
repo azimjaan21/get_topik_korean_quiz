@@ -1,3 +1,4 @@
+import 'package:get_topik_korean_quiz/tools/extentions/sized_box_extention.dart';
 import 'package:get_topik_korean_quiz/tools/file_importer.dart';
 import 'package:get_topik_korean_quiz/screens/home/widgets/random/random_card.dart';
 
@@ -55,10 +56,12 @@ class HomeScreen extends StatelessWidget {
                     ],
                   ),
                 ),
-               const Divider(),
-                const SizedBox(height: 20,),
-                RandomQuizCard(onTap:  () => Navigator.of(context)
-                            .pushNamed(RouteName.randomQuiz),),
+                const Divider(),
+                20.kH,
+                RandomQuizCard(
+                  onTap: () =>
+                      Navigator.of(context).pushNamed(RouteName.randomQuiz),
+                ),
               ],
             ),
           ),
