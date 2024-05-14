@@ -1,4 +1,5 @@
 import 'package:flutter_tts/flutter_tts.dart';
+import 'package:get_topik_korean_quiz/tools/extentions/sized_box_extention.dart';
 import 'package:get_topik_korean_quiz/tools/file_importer.dart';
 
 class QuizCard extends StatelessWidget {
@@ -45,7 +46,7 @@ class QuizCard extends StatelessWidget {
                   word,
                   style: quizWord,
                 ),
-                const SizedBox(height: 20.0),
+                20.kH,
                 const Icon(
                   Icons.volume_up,
                   size: 50,

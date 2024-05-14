@@ -1,3 +1,4 @@
+import 'package:get_topik_korean_quiz/tools/extentions/sized_box_extention.dart';
 import 'package:get_topik_korean_quiz/tools/file_importer.dart';
 class RandomQuizScreen extends StatelessWidget {
   const RandomQuizScreen({super.key}); // Korean word to be spoken
@@ -11,9 +12,9 @@ class RandomQuizScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
             const RandomAppBar(),
-            const SizedBox(height: 33),
+            33.kH,
             QuizCard(word: '도서관'),
-            const SizedBox(height: 33),
+            33.kH,
             const Padding(
               padding: EdgeInsets.symmetric(horizontal: 10, vertical: 4),
               child:  Card(
