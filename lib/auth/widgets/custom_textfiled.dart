@@ -1,6 +1,6 @@
 // ignore_for_file: library_private_types_in_public_api
 
-import 'package:flutter/material.dart';
+import 'package:get_topik_korean_quiz/tools/file_importer.dart';
 
 class CustomTextField extends StatefulWidget {
   final String hintText;
@@ -28,22 +28,32 @@ class _CustomTextFieldState extends State<CustomTextField> {
 
   @override
   Widget build(BuildContext context) {
-    return TextField(
-      controller: widget.controller,
-      decoration: InputDecoration(
-        hintText: widget.hintText,
-        errorText: _isValid ? null : 'Invalid ${widget.hintText}',
+    return SizedBox(
+      width: MediaQuery.sizeOf(context).width * 0.9,
+      child: TextField(
+        controller: widget.controller,
+        decoration: InputDecoration(
+          border: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(10),
+              borderSide: BorderSide(
+                color: AppColors.topBarColor,
+                width: 10,
+                style: BorderStyle.none
+              ),),
+          hintText: widget.hintText,
+          errorText: _isValid ? null : 'Invalid ${widget.hintText}',
+        ),
+        onChanged: (value) {
+          setState(() {
+            if (widget.isPassword) {
+              _isValid = _validatePassword(value);
+            } else {
+              _isValid = _validateEmail(value);
+            }
+          });
+        },
+        obscureText: widget.isPassword,
       ),
-      onChanged: (value) {
-        setState(() {
-          if (widget.isPassword) {
-            _isValid = _validatePassword(value);
-          } else {
-            _isValid = _validateEmail(value);
-          }
-        });
-      },
-      obscureText: widget.isPassword,
     );
   }
 
