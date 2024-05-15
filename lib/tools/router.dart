@@ -1,3 +1,5 @@
+import 'package:get_topik_korean_quiz/auth/sign_in_screen.dart';
+import 'package:get_topik_korean_quiz/auth/sign_up_screen.dart';
 import 'package:get_topik_korean_quiz/screens/random_quiz/random_quiz.dart';
 import 'package:get_topik_korean_quiz/screens/unit_quiz/unit_quiz_screen.dart';
 import 'package:get_topik_korean_quiz/tools/file_importer.dart';
@@ -10,11 +12,18 @@ abstract class RouteName {
   static const getTopik2 = '/getTopik2';
   static const randomQuiz = '/randomQuiz';
   static const unitQuiz = '/unitQuiz';
+  static const signUp = '/signUp';
+  static const signIn = '/signIn';
 }
 
 class RouterNavigator {
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
+
+       
+      case RouteName.home:
+        return MaterialPageRoute(builder: (_) => const HomeScreen());
+
       case RouteName.getTopik1:
         return MaterialPageRoute(builder: (_) => const GetTopik1());
 
@@ -26,6 +35,12 @@ class RouterNavigator {
 
       case RouteName.unitQuiz:
         return MaterialPageRoute(builder: (_) => const UnitQuizScreen());
+
+      case RouteName.signUp:
+        return MaterialPageRoute(builder: (_) => const SignUpScreen());
+
+      case RouteName.signIn:
+        return MaterialPageRoute(builder: (_) => const SignInScreen());
 
       // If smth is wrong here, this screen give info:
       default:
