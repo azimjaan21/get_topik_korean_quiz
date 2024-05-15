@@ -1,3 +1,4 @@
+import 'package:get_topik_korean_quiz/tools/colors.dart';
 import 'package:get_topik_korean_quiz/tools/file_importer.dart';
 
 const bannerText = TextStyle(
@@ -36,7 +37,26 @@ const quizWord = TextStyle(
 );
 
 const loginText = TextStyle(
-  color: Colors.black,
-  fontSize: 20,
+  color: Color.fromARGB(255, 255, 255, 255),
+  fontSize: 16,
   fontWeight: FontWeight.w500,
+);
+
+const fieldText = TextStyle(
+  color: Color.fromARGB(255, 255, 255, 255),
+  fontSize: 15,
+  fontWeight: FontWeight.w400,
+);
+
+const hintText = TextStyle(
+  color: Color(0xFFA8A3A3),
+);
+
+final resetTextPassword = TextStyle(
+  
+  color: AppColors.butColor,
+  fontSize: 14,
+  fontWeight: FontWeight.w400,
+  
+
 );

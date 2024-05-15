@@ -1,3 +1,4 @@
+import 'package:get_topik_korean_quiz/auth/reset_password_screen.dart';
 import 'package:get_topik_korean_quiz/auth/sign_in_screen.dart';
 import 'package:get_topik_korean_quiz/auth/sign_up_screen.dart';
 import 'package:get_topik_korean_quiz/screens/random_quiz/random_quiz.dart';
@@ -14,13 +15,12 @@ abstract class RouteName {
   static const unitQuiz = '/unitQuiz';
   static const signUp = '/signUp';
   static const signIn = '/signIn';
+  static const resetPassword = '/resetPassword';
 }
 
 class RouterNavigator {
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
-
-       
       case RouteName.home:
         return MaterialPageRoute(builder: (_) => const HomeScreen());
 
@@ -41,6 +41,9 @@ class RouterNavigator {
 
       case RouteName.signIn:
         return MaterialPageRoute(builder: (_) => const SignInScreen());
+
+      case RouteName.resetPassword:
+        return MaterialPageRoute(builder: (_) => const ResetPasswordScreen());
 
       // If smth is wrong here, this screen give info:
       default:

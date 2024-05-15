@@ -19,11 +19,12 @@ class CustomTextField extends StatefulWidget {
 
 class _CustomTextFieldState extends State<CustomTextField> {
   late bool _isValid;
-
+  late bool _isVisible;
   @override
   void initState() {
     super.initState();
     _isValid = true;
+    _isVisible = !widget.isPassword;
   }
 
   @override
@@ -31,18 +32,35 @@ class _CustomTextFieldState extends State<CustomTextField> {
     return SizedBox(
       width: MediaQuery.sizeOf(context).width * 0.9,
       child: TextField(
+        style: fieldText,
         keyboardType: TextInputType.emailAddress,
         controller: widget.controller,
+        obscureText: widget.isPassword && !_isVisible,
         decoration: InputDecoration(
+          hintStyle: hintText,
           border: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(10),
-              borderSide: BorderSide(
-                color: AppColors.topBarColor,
-                width: 10,
-                style: BorderStyle.none
-              ),),
+            borderRadius: BorderRadius.circular(10),
+          ),
+          
+          focusedBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(10),
+            borderSide: BorderSide(color: AppColors.butColor, width: 2),
+          ),
           hintText: widget.hintText,
-          errorText: _isValid ? null : 'Invalid ${widget.hintText}',
+          suffixIcon: widget.isPassword
+              ? IconButton(
+                  icon: Icon(
+                    color: AppColors.suffixIconColor,
+                    _isVisible ? Icons.visibility : Icons.visibility_off,
+                  ),
+                  onPressed: () {
+                    setState(() {
+                      _isVisible = !_isVisible;
+                    });
+                  },
+                )
+              : null,
+          errorText: _isValid || widget.controller.text.isEmpty ? null : widget.isPassword ?'Parol 6 ta belgidan iborat bo\'lsin!' :' ${widget.hintText}ni to\'gri kiriting!',
         ),
         onChanged: (value) {
           setState(() {
@@ -53,7 +71,6 @@ class _CustomTextFieldState extends State<CustomTextField> {
             }
           });
         },
-        obscureText: widget.isPassword,
       ),
     );
   }
