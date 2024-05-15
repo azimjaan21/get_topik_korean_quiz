@@ -9,7 +9,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        backgroundColor: Colors.grey[300],
+        backgroundColor: AppColors.background,
         body: SingleChildScrollView(
           child: SizedBox(
             width: MediaQuery.sizeOf(context).width,

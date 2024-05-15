@@ -8,13 +8,13 @@ class UnitQuizScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        backgroundColor: Colors.grey[300],
+        backgroundColor: AppColors.background,
         body: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
             33.kH,
             QuizCard(word: '도서관'),
-           33.kH,
+            33.kH,
             const Padding(
               padding: EdgeInsets.symmetric(horizontal: 10, vertical: 4),
               child: Card(
