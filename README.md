@@ -23,6 +23,9 @@ Tools: Dart (Flutter) + Firebase.
 
 ![image](https://github.com/azimjaan21/get_topik_korean_quiz/assets/117064407/ee0df0f1-7574-474a-a11c-76549208b4b5)
 
+#Day 4 -> Sign In Screen + TextField(with validation) + setting up Firebase to Auth
+
+![image](https://github.com/azimjaan21/get_topik_korean_quiz/assets/117064407/7a1bfaf9-1a5b-42a9-871c-f8b3bceb5ea8)
 
 
 
