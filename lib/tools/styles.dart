@@ -34,3 +34,9 @@ const quizWord = TextStyle(
   fontSize: 25,
   fontWeight: FontWeight.bold,
 );
+
+const loginText = TextStyle(
+  color: Colors.black,
+  fontSize: 20,
+  fontWeight: FontWeight.w500,
+);

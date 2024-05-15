@@ -16,32 +16,37 @@ class _SignInScreenState extends State<SignInScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        backgroundColor: AppColors.background,
-        body: Column(
-          children: [
-            const Spacer(),
-            const Text("Sign in"),
-            30.kH,
-            CustomTextField(
-              hintText: 'Email',
-              isPassword: false,
-              controller: _email,
+    return GestureDetector(
+      onTap: () => FocusScope.of(context).unfocus(),
+      child: SafeArea(
+        child: Scaffold(
+          backgroundColor: AppColors.background,
+          body: Center(
+            child: Column(
+              children: [
+                const Spacer(),
+                const Text("Sign in"),
+                30.kH,
+                CustomTextField(
+                  hintText: 'Email',
+                  isPassword: false,
+                  controller: _email,
+                ),
+                10.kH,
+                CustomTextField(
+                  hintText: 'Password',
+                  isPassword: true,
+                  controller: _password,
+                ),
+                30.kH,
+                CustomButton(
+                  text: 'Sign in',
+                  ontap: () => Navigator.of(context).pushNamed(RouteName.home),
+                ),
+                const Spacer(),
+              ],
             ),
-            10.kH,
-            CustomTextField(
-              hintText: 'Password',
-              isPassword: true,
-              controller: _password,
-            ),
-            30.kH,
-            CustomButton(
-              text: 'Sign in',
-              ontap: () => Navigator.of(context).pushNamed(RouteName.home),
-            ),
-            const Spacer(),
-          ],
+          ),
         ),
       ),
     );
