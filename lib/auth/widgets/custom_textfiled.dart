@@ -31,7 +31,7 @@ class _CustomTextFieldState extends State<CustomTextField> {
     return SizedBox(
       width: MediaQuery.sizeOf(context).width * 0.9,
       child: TextField(
-        
+        keyboardType: TextInputType.emailAddress,
         controller: widget.controller,
         decoration: InputDecoration(
           border: OutlineInputBorder(
