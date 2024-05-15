@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1041821793868",
+    "project_id": "gettopik-quiz",
+    "storage_bucket": "gettopik-quiz.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1041821793868:android:1671ca73624e72851fbee9",
+        "android_client_info": {
+          "package_name": "com.example.get_topik_korean_quiz"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBU_yee5nBidxRhGdoDtmyDeqUQpBIi1mQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
