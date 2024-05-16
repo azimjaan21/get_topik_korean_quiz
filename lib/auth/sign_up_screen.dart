@@ -1,3 +1,6 @@
+import 'dart:developer';
+
+import 'package:get_topik_korean_quiz/auth/auth_service.dart';
 import 'package:get_topik_korean_quiz/auth/widgets/name_textField.dart';
 import 'package:get_topik_korean_quiz/tools/file_importer.dart';
 
@@ -9,6 +12,8 @@ class SignUpScreen extends StatefulWidget {
 }
 
 class _SignUpScreenState extends State<SignUpScreen> {
+  final _auth = AuthService();
+
   final _email = TextEditingController();
   final _password = TextEditingController();
   final _name = TextEditingController();
@@ -63,8 +68,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   CustomButton(
                     text: "Ro'yxatdan o'tish",
                     buttonColor: AppColors.butColor,
-                    ontap: () =>
-                        Navigator.of(context).pushNamed(RouteName.signUp),
+                    ontap: _signUp,
                   ),
                 ],
               ),
@@ -73,5 +77,22 @@ class _SignUpScreenState extends State<SignUpScreen> {
         ),
       ),
     );
+  }
+
+  goToHome(BuildContext context) {
+    Navigator.of(context).pushNamed(RouteName.home);
+  }
+
+  _signUp() async {
+    final user =
+        await _auth.createUserWithEmailAndPassword(_email.text, _password.text);
+
+    if (user != null) {
+      log("User Created Succesfully");
+      // ignore: use_build_context_synchronously
+      goToHome(context);
+    } else {
+      log("Something went wrong in SignUp");
+    }
   }
 }
