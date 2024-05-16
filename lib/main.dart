@@ -1,5 +1,4 @@
 import 'package:firebase_core/firebase_core.dart';
-import 'package:get_topik_korean_quiz/auth/sign_in_screen.dart';
 import 'package:get_topik_korean_quiz/tools/file_importer.dart';
 
 void main() async {
@@ -27,7 +26,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
       ),
-      home: const SignInScreen(),
+      home: const SplashScreen(),
       onGenerateRoute: RouterNavigator.generateRoute,
     );
   }

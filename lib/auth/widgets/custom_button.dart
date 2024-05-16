@@ -14,6 +14,7 @@ class CustomButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: ontap,
+      borderRadius: BorderRadius.circular(10),
       child: Container(
         width: MediaQuery.sizeOf(context).width * 0.75,
         height: 50,

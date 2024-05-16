@@ -5,7 +5,8 @@ import 'package:get_topik_korean_quiz/tools/file_importer.dart';
 class CustomTextField extends StatefulWidget {
   final String hintText;
   final bool isPassword;
-  final TextEditingController controller; // Added controller
+
+  final TextEditingController controller; 
   const CustomTextField({
     super.key,
     required this.hintText,
@@ -20,9 +21,11 @@ class CustomTextField extends StatefulWidget {
 class _CustomTextFieldState extends State<CustomTextField> {
   late bool _isValid;
   late bool _isVisible;
+
   @override
   void initState() {
     super.initState();
+
     _isValid = true;
     _isVisible = !widget.isPassword;
   }
@@ -41,7 +44,6 @@ class _CustomTextFieldState extends State<CustomTextField> {
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(10),
           ),
-          
           focusedBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(10),
             borderSide: BorderSide(color: AppColors.butColor, width: 2),
@@ -60,7 +62,11 @@ class _CustomTextFieldState extends State<CustomTextField> {
                   },
                 )
               : null,
-          errorText: _isValid || widget.controller.text.isEmpty ? null : widget.isPassword ?'Parol 6 ta belgidan iborat bo\'lsin!' :' ${widget.hintText}ni to\'gri kiriting!',
+          errorText: _isValid || widget.controller.text.isEmpty
+              ? null
+              : widget.isPassword
+                  ? 'Kamida 6 ta belgidan iborat bo\'lsin!'
+                  : ' ${widget.hintText}ni to\'gri kiriting!',
         ),
         onChanged: (value) {
           setState(() {
