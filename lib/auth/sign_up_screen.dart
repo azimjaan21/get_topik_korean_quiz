@@ -1,7 +1,7 @@
 import 'dart:developer';
 
 import 'package:get_topik_korean_quiz/auth/auth_service.dart';
-import 'package:get_topik_korean_quiz/auth/widgets/name_textField.dart';
+import 'package:get_topik_korean_quiz/auth/widgets/name_text_field.dart';
 import 'package:get_topik_korean_quiz/tools/file_importer.dart';
 
 class SignUpScreen extends StatefulWidget {
@@ -17,6 +17,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
   final _email = TextEditingController();
   final _password = TextEditingController();
   final _name = TextEditingController();
+  bool _isLoading = false;
 
   @override
   void dispose() {
@@ -65,11 +66,14 @@ class _SignUpScreenState extends State<SignUpScreen> {
                     controller: _password,
                   ),
                   40.kH,
-                  CustomButton(
-                    text: "Ro'yxatdan o'tish",
-                    buttonColor: AppColors.butColor,
-                    ontap: _signUp,
-                  ),
+                  _isLoading
+                      ? CircularProgressIndicator(
+                          color: AppColors.gettopikColor)
+                      : CustomButton(
+                          text: "Ro'yxatdan o'tish",
+                          buttonColor: AppColors.butColor,
+                          ontap: _signUp,
+                        ),
                 ],
               ),
             ),
@@ -79,20 +83,37 @@ class _SignUpScreenState extends State<SignUpScreen> {
     );
   }
 
-  goToHome(BuildContext context) {
-    Navigator.of(context).pushNamed(RouteName.home);
+  void goToHome1(BuildContext context) {
+    Navigator.of(context).pushAndRemoveUntil(
+      MaterialPageRoute(
+        builder: (context) => const HomeScreen(),
+      ),
+      (Route<dynamic> route) => false,
+    );
   }
 
-  _signUp() async {
-    final user =
-        await _auth.createUserWithEmailAndPassword(_email.text, _password.text);
+  Future<void> _signUp() async {
+    setState(() {
+      _isLoading = true;
+    });
 
-    if (user != null) {
-      log("User Created Succesfully");
-      // ignore: use_build_context_synchronously
-      goToHome(context);
-    } else {
-      log("Something went wrong in SignUp");
+    try {
+      final user = await _auth.createUserWithEmailAndPassword(
+          _email.text, _password.text);
+
+      if (user != null) {
+        log("User Created Successfully");
+        // ignore: use_build_context_synchronously
+        goToHome1(context);
+      } else {
+        log("Something went wrong in SignUp");
+      }
+    } catch (e) {
+      log("Error during sign up: $e");
+    } finally {
+      setState(() {
+        _isLoading = false;
+      });
     }
   }
 }

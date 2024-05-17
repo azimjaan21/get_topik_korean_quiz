@@ -1,4 +1,3 @@
-import 'package:get_topik_korean_quiz/tools/extentions/sized_box_extention.dart';
 import 'package:get_topik_korean_quiz/tools/file_importer.dart';
 class RandomQuizScreen extends StatelessWidget {
   const RandomQuizScreen({super.key}); // Korean word to be spoken
