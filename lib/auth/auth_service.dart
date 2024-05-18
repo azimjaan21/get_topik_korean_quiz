@@ -3,7 +3,8 @@ import 'dart:developer';
 import 'package:firebase_auth/firebase_auth.dart';
 
 class AuthService {
-  final _auth = FirebaseAuth.instance;
+  final FirebaseAuth _auth = FirebaseAuth.instance;
+  static FirebaseAuth auth = FirebaseAuth.instance;
 
 //Creating New User
   Future<User?> createUserWithEmailAndPassword(
