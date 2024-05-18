@@ -3,6 +3,7 @@ import 'package:get_topik_korean_quiz/auth/sign_in_screen.dart';
 import 'package:get_topik_korean_quiz/auth/sign_up_screen.dart';
 import 'package:get_topik_korean_quiz/screens/random_quiz/random_quiz.dart';
 import 'package:get_topik_korean_quiz/screens/unit_quiz/unit_quiz_screen.dart';
+import 'package:get_topik_korean_quiz/screens/user_profile/user_profile_screen.dart';
 import 'package:get_topik_korean_quiz/tools/file_importer.dart';
 
 abstract class RouteName {
@@ -16,6 +17,7 @@ abstract class RouteName {
   static const signUp = '/signUp';
   static const signIn = '/signIn';
   static const resetPassword = '/resetPassword';
+  static const userProfile = '/userProfile';
 }
 
 class RouterNavigator {
@@ -44,6 +46,9 @@ class RouterNavigator {
 
       case RouteName.resetPassword:
         return MaterialPageRoute(builder: (_) => const ResetPasswordScreen());
+
+      case RouteName.userProfile:
+        return MaterialPageRoute(builder: (_) => const UserProfileScreen());
 
       // If smth is wrong here, this screen give info:
       default:

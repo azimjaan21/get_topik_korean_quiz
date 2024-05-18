@@ -24,7 +24,7 @@ const randomTexth1 = TextStyle(
 );
 
 const randomTexth2 = TextStyle(
-  color: Colors.amber,
+  color: Color(0xFFFFC107),
   fontSize: 18,
   fontWeight: FontWeight.bold,
 );
@@ -52,10 +52,30 @@ const hintText = TextStyle(
 );
 
 final resetTextPassword = TextStyle(
-  
   color: AppColors.butColor,
   fontSize: 14,
   fontWeight: FontWeight.w400,
-  
+);
+final userProfileText = TextStyle(
+  color: AppColors.gettopikColor,
+  fontWeight: FontWeight.w500,
+  fontSize: 18,
+);
 
+const userTexth1 = TextStyle(
+  color: Colors.white,
+  fontSize: 17,
+  fontWeight: FontWeight.bold,
+);
+
+const mailTexth2 = TextStyle(
+  color: Color(0xFFFFC107),
+  fontSize: 12,
+  fontWeight: FontWeight.w500,
+);
+
+const logButtonText = TextStyle(
+  color: Color(0xFFFF0707),
+  fontSize: 15,
+  fontWeight: FontWeight.w500,
 );

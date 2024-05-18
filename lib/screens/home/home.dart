@@ -1,5 +1,4 @@
 import 'package:get_topik_korean_quiz/tools/file_importer.dart';
-import 'package:get_topik_korean_quiz/screens/home/widgets/random/random_card.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -14,7 +13,10 @@ class HomeScreen extends StatelessWidget {
             width: MediaQuery.sizeOf(context).width,
             child: Column(
               children: [
-                const TopBarGetTopik(),
+                 TopBarGetTopik(
+                  ontap: () => Navigator.of(context)
+                            .pushNamed(RouteName.userProfile),
+                ),
                 Padding(
                   padding: const EdgeInsets.only(
                     top: 20,

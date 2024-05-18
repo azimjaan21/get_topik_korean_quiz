@@ -52,6 +52,6 @@ class _CustomNameTextFieldState extends State<CustomNameTextField> {
   }
 
   bool _validateName(String value) {
-    return value.length >= 4;
+    return value.length >= 4 && value.length<=20;
   }
 }

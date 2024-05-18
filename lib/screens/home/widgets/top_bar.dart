@@ -1,7 +1,8 @@
 import 'package:get_topik_korean_quiz/tools/file_importer.dart';
 
 class TopBarGetTopik extends StatelessWidget {
-  const TopBarGetTopik({super.key});
+  final Function() ontap;
+  const TopBarGetTopik({super.key, required this.ontap});
 
   @override
   Widget build(BuildContext context) {
@@ -27,9 +28,12 @@ class TopBarGetTopik extends StatelessWidget {
               ),
             ],
           ),
-          CircleAvatar(
-            backgroundColor: AppColors.gettopikColor,
-            child: const Icon(Icons.person),
+          InkWell(
+            onTap: ontap,
+            child: CircleAvatar(
+              backgroundColor: AppColors.gettopikColor,
+              child: const Icon(Icons.person),
+            ),
           )
         ],
       ),

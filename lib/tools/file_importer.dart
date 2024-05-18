@@ -19,7 +19,9 @@ export 'package:get_topik_korean_quiz/auth/widgets/custom_textfiled.dart';
 export 'package:get_topik_korean_quiz/auth/widgets/custom_button.dart';
 export 'package:get_topik_korean_quiz/auth/widgets/text_reset_password.dart';
 export 'package:flutter_tts/flutter_tts.dart';
-
-
-
+export 'package:get_topik_korean_quiz/screens/home/widgets/random/random_card.dart';
+export 'package:get_topik_korean_quiz/tools/icons.dart';
+export 'package:get_topik_korean_quiz/screens/user_profile/widgets/log_out_button.dart';
+export 'package:get_topik_korean_quiz/screens/user_profile/widgets/user_card.dart';
+export 'package:get_topik_korean_quiz/screens/user_profile/widgets/user_options_card.dart';
 
