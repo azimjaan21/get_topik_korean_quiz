@@ -33,7 +33,7 @@ class AuthService {
   }
 
   //Sign Out Account
-  Future<void> signOut() async {
+   Future<void> signOut() async {
     try {
       await _auth.signOut();
     } catch (e) {

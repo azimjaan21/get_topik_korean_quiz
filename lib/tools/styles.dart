@@ -79,3 +79,15 @@ const logButtonText = TextStyle(
   fontSize: 15,
   fontWeight: FontWeight.w500,
 );
+
+const noText = TextStyle(fontSize: 14, fontWeight: FontWeight.w700);
+const exitText = TextStyle(
+  fontSize: 14,
+  fontWeight: FontWeight.bold,
+  color: Color.fromARGB(255, 250, 17, 0),
+);
+
+const logOutNotifyText = TextStyle(
+  fontSize: 16,
+  fontWeight: FontWeight.w400,
+);

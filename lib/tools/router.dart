@@ -48,7 +48,7 @@ class RouterNavigator {
         return MaterialPageRoute(builder: (_) => const ResetPasswordScreen());
 
       case RouteName.userProfile:
-        return MaterialPageRoute(builder: (_) => const UserProfileScreen());
+        return MaterialPageRoute(builder: (_) =>   const UserProfileScreen());
 
       // If smth is wrong here, this screen give info:
       default:

@@ -112,7 +112,7 @@ class _SignInScreenState extends State<SignInScreen> {
       _isLoading = true;
     });
 
-     try {
+    try {
       final user = await _auth.loginUserWithEmailAndPassword(
           _email.text, _password.text);
 

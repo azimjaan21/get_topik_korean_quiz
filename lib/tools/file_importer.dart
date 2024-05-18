@@ -24,4 +24,5 @@ export 'package:get_topik_korean_quiz/tools/icons.dart';
 export 'package:get_topik_korean_quiz/screens/user_profile/widgets/log_out_button.dart';
 export 'package:get_topik_korean_quiz/screens/user_profile/widgets/user_card.dart';
 export 'package:get_topik_korean_quiz/screens/user_profile/widgets/user_options_card.dart';
-
+export 'package:firebase_auth/firebase_auth.dart';
+export 'package:get_topik_korean_quiz/auth/sign_in_screen.dart';
