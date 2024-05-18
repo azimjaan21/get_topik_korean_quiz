@@ -20,7 +20,9 @@ class UserProfileScreen extends StatelessWidget {
                   ),
                 ),
               ),
-              const UserCard(name: "Cristiano", email: 'cristiano@mail.com'),
+              UserCard(
+                  name: AuthService.auth.currentUser!.displayName==null ? 'User' :'${AuthService.auth.currentUser!.displayName}',
+                  email: '${AuthService.auth.currentUser!.email}'),
               30.kH,
               UserOptionsCard(
                 optionText: 'Gettopik',
@@ -53,7 +55,6 @@ class UserProfileScreen extends StatelessWidget {
                       return AlertDialog(
                         backgroundColor: AppColors.background,
                         content: const Text('Akkauntdan chiqish?',
-                        
                             style: logOutNotifyText),
                         actions: [
                           TextButton(
