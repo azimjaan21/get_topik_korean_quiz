@@ -40,4 +40,12 @@ class AuthService {
       log("Something went wrong!");
     }
   }
+
+
+  //Google Sign In
+
+  //begin interactive sign in process
+  //obtain auth details from request
+  //create a new credential for user
+  //finally, Sign In
 }

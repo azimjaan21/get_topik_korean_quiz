@@ -26,3 +26,9 @@ export 'package:get_topik_korean_quiz/screens/user_profile/widgets/user_card.dar
 export 'package:get_topik_korean_quiz/screens/user_profile/widgets/user_options_card.dart';
 export 'package:firebase_auth/firebase_auth.dart';
 export 'package:get_topik_korean_quiz/auth/sign_in_screen.dart';
+export 'package:get_topik_korean_quiz/auth/reset_password_screen.dart';
+export 'package:get_topik_korean_quiz/auth/sign_up_screen.dart';
+export 'package:get_topik_korean_quiz/screens/random_quiz/random_quiz.dart';
+export 'package:get_topik_korean_quiz/screens/unit_quiz/unit_quiz_screen.dart';
+export 'package:get_topik_korean_quiz/screens/user_profile/user_profile_screen.dart';
+
