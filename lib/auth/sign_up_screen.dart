@@ -1,7 +1,5 @@
 import 'dart:developer';
 
-import 'package:get_topik_korean_quiz/auth/auth_service.dart';
-import 'package:get_topik_korean_quiz/auth/widgets/name_text_field.dart';
 import 'package:get_topik_korean_quiz/tools/file_importer.dart';
 
 class SignUpScreen extends StatefulWidget {
@@ -68,11 +66,23 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   40.kH,
                   _isLoading
                       ? CircularProgressIndicator(
-                          color: AppColors.gettopikColor)
-                      : CustomButton(
-                          text: "Ro'yxatdan o'tish",
-                          buttonColor: AppColors.butColor,
-                          ontap: _signUp,
+                          color: AppColors.gettopikColor,
+                        )
+                      : Column(
+                          children: [
+                            CustomButton(
+                              text: "Ro'yxatdan o'tish",
+                              buttonColor: AppColors.butColor,
+                              ontap: _signUp,
+                            ),
+                            25.kH,
+                            GoogleButton(
+                              text: 'Google orqali',
+                              ontap: () async {
+                                await AuthService().signInWithGoogle();
+                              },
+                            ),
+                          ],
                         ),
                 ],
               ),

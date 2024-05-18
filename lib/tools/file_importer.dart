@@ -31,4 +31,6 @@ export 'package:get_topik_korean_quiz/auth/sign_up_screen.dart';
 export 'package:get_topik_korean_quiz/screens/random_quiz/random_quiz.dart';
 export 'package:get_topik_korean_quiz/screens/unit_quiz/unit_quiz_screen.dart';
 export 'package:get_topik_korean_quiz/screens/user_profile/user_profile_screen.dart';
-
+export 'package:get_topik_korean_quiz/auth/auth_service.dart';
+export 'package:get_topik_korean_quiz/auth/widgets/google_button.dart';
+export 'package:get_topik_korean_quiz/auth/widgets/name_text_field.dart';

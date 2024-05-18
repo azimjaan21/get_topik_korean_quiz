@@ -1,7 +1,5 @@
 import 'package:get_topik_korean_quiz/tools/file_importer.dart';
 
-import '../auth/auth_service.dart';
-
 class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});
 
@@ -18,7 +16,9 @@ class SplashScreen extends StatelessWidget {
             'assets/images/gettopik.png',
           ),
         ),
-        nextScreen:AuthService.auth.currentUser==null? const SignInScreen():const HomeScreen(),
+        nextScreen: AuthService.auth.currentUser == null
+            ? const SignInScreen()
+            : const HomeScreen(),
       ),
     );
   }
