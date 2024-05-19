@@ -7,7 +7,6 @@ abstract class RouteName {
   static const getTopik1 = '/getTopik1';
   static const getTopik2 = '/getTopik2';
   static const randomQuiz = '/randomQuiz';
-  static const unitQuiz = '/unitQuiz';
   static const signUp = '/signUp';
   static const signIn = '/signIn';
   static const resetPassword = '/resetPassword';
@@ -29,9 +28,6 @@ class RouterNavigator {
       case RouteName.randomQuiz:
         return MaterialPageRoute(builder: (_) => const RandomQuizScreen());
 
-      case RouteName.unitQuiz:
-        return MaterialPageRoute(builder: (_) =>  const UnitQuizScreen());
-
       case RouteName.signUp:
         return MaterialPageRoute(builder: (_) => const SignUpScreen());
 
@@ -42,7 +38,7 @@ class RouterNavigator {
         return MaterialPageRoute(builder: (_) => const ResetPasswordScreen());
 
       case RouteName.userProfile:
-        return MaterialPageRoute(builder: (_) =>   const UserProfileScreen());
+        return MaterialPageRoute(builder: (_) => const UserProfileScreen());
 
       // If smth is wrong here, this screen give info:
       default:

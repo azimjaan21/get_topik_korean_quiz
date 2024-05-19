@@ -68,7 +68,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                             CustomButton(
                               text: "Ro'yxatdan o'tish",
                               buttonColor: AppColors.butColor,
-                              ontap: _signUp,
+                              ontap: () => _signUp(context),
                             ),
                             25.kH,
                             GoogleButton(
@@ -97,7 +97,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
     );
   }
 
-  Future<void> _signUp() async {
+  Future<void> _signUp(BuildContext context) async {
     setState(() {
       _isLoading = true;
     });
@@ -108,6 +108,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
 
       if (user != null) {
         log("User Created Successfully");
+        
         // ignore: use_build_context_synchronously
         goToHome1(context);
       } else {

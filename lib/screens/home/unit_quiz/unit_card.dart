@@ -15,7 +15,7 @@ class UnitCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       borderRadius: BorderRadius.circular(20),
-      onTap: () => Navigator.of(context).pushNamed(RouteName.unitQuiz),
+      onTap: () => Navigator.of(context).pushNamed(RouteName.home),
       child: Padding(
         padding: const EdgeInsets.symmetric(vertical: 8.0),
         child: Stack(

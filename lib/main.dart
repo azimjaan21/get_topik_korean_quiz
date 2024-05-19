@@ -1,8 +1,4 @@
-import 'package:firebase_core/firebase_core.dart';
-import 'package:get_topik_korean_quiz/databases/database_helper.dart';
 import 'package:get_topik_korean_quiz/tools/file_importer.dart';
-
-import 'services/quiz.service.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -15,13 +11,6 @@ void main() async {
       projectId: 'gettopik-quiz',
     ),
   );
-
-
-//database
- DatabaseHelper dbHelper = DatabaseHelper();
-  dbHelper.deleteDatabase; // Ensure the database is deleted for fresh creation
-  QuizService quizService = QuizService();
-  await quizService.loadQuizzes(getSampleQuizzes());
 
   runApp(const MyApp());
 }
