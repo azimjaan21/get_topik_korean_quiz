@@ -1,3 +1,4 @@
+import 'package:get_topik_korean_quiz/helper/quiz_db_helper.dart';
 import 'package:get_topik_korean_quiz/tools/file_importer.dart';
 
 void main() async {
@@ -12,6 +13,8 @@ void main() async {
     ),
   );
 
+// sqflite database
+  await QuizDatabaseHelper().initDatabase();
   runApp(const MyApp());
 }
 
