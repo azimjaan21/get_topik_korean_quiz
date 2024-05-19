@@ -1,6 +1,5 @@
 // ignore_for_file: use_build_context_synchronously
 
-import 'package:get_topik_korean_quiz/tools/colors.dart';
 import 'package:get_topik_korean_quiz/tools/file_importer.dart';
 
 class ResetPasswordScreen extends StatefulWidget {
@@ -31,6 +30,7 @@ class _ResetPasswordScreenState extends State<ResetPasswordScreen> {
         ),
       );
     } on FirebaseAuthException catch (e) {
+      // ignore: avoid_print
       print(e);
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(content: Text('Error: ${e.message}')),

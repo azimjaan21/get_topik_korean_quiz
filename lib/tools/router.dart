@@ -30,7 +30,7 @@ class RouterNavigator {
         return MaterialPageRoute(builder: (_) => const RandomQuizScreen());
 
       case RouteName.unitQuiz:
-        return MaterialPageRoute(builder: (_) => const UnitQuizScreen());
+        return MaterialPageRoute(builder: (_) =>  const UnitQuizScreen());
 
       case RouteName.signUp:
         return MaterialPageRoute(builder: (_) => const SignUpScreen());
@@ -42,7 +42,7 @@ class RouterNavigator {
         return MaterialPageRoute(builder: (_) => const ResetPasswordScreen());
 
       case RouteName.userProfile:
-        return MaterialPageRoute(builder: (_) =>    UserProfileScreen());
+        return MaterialPageRoute(builder: (_) =>   const UserProfileScreen());
 
       // If smth is wrong here, this screen give info:
       default:
