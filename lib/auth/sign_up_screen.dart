@@ -47,11 +47,6 @@ class _SignUpScreenState extends State<SignUpScreen> {
                     style: randomTexth1,
                   ),
                   30.kH,
-                  CustomNameTextField(
-                    hintText: 'Ismingiz',
-                    controller: _name,
-                  ),
-                  10.kH,
                   CustomTextField(
                     hintText: 'Email',
                     isPassword: false,

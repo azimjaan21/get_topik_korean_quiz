@@ -21,7 +21,7 @@ class UserProfileScreen extends StatelessWidget {
                 ),
               ),
               UserCard(
-                  name: AuthService.auth.currentUser!.displayName==null ? 'User' :'${AuthService.auth.currentUser!.displayName}',
+                  name: 'User',
                   email: '${AuthService.auth.currentUser!.email}'),
               30.kH,
               UserOptionsCard(
@@ -79,8 +79,9 @@ class UserProfileScreen extends StatelessWidget {
                     await FirebaseAuth.instance.signOut();
                     // ignore: use_build_context_synchronously
                     ScaffoldMessenger.of(context).showSnackBar(
-                      const SnackBar(
-                        content: Text('Akkauntdan chiqildi'),
+                      SnackBar(
+                        content: const Text('Akkauntdan chiqildi !'),
+                        backgroundColor: AppColors.butColor,
                       ),
                     );
                     // Navigate to login screen
