@@ -4,18 +4,21 @@ class UnitCard extends StatelessWidget {
   final String unitTitle;
   final String unitImage;
   final String unitNumber;
+  final Function() ontap;
 
-  const UnitCard(
-      {super.key,
-      required this.unitTitle,
-      required this.unitImage,
-      required this.unitNumber});
+  const UnitCard({
+    super.key,
+    required this.unitTitle,
+    required this.unitImage,
+    required this.unitNumber,
+    required this.ontap,
+  });
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
       borderRadius: BorderRadius.circular(20),
-      onTap: () => Navigator.of(context).pushNamed(RouteName.home),
+      onTap: ontap,
       child: Padding(
         padding: const EdgeInsets.symmetric(vertical: 8.0),
         child: Stack(

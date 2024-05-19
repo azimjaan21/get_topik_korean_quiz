@@ -34,6 +34,11 @@ const quizWord = TextStyle(
   fontSize: 25,
   fontWeight: FontWeight.bold,
 );
+const quizSliderText = TextStyle(
+  color: Colors.black,
+  fontSize: 18,
+  fontWeight: FontWeight.w700,
+);
 
 const loginText = TextStyle(
   color: Color.fromARGB(255, 255, 255, 255),
@@ -91,3 +96,5 @@ const logOutNotifyText = TextStyle(
   fontSize: 16,
   fontWeight: FontWeight.w400,
 );
+
+

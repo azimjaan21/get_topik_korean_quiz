@@ -1,17 +1,18 @@
-import 'package:flutter/material.dart';
+import 'package:get_topik_korean_quiz/tools/file_importer.dart';
 
 class ResultScreen extends StatelessWidget {
   final int totalQuestions;
   final int correctAnswers;
 
-  ResultScreen({required this.totalQuestions, required this.correctAnswers});
+  const ResultScreen(
+      {super.key, required this.totalQuestions, required this.correctAnswers});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Quiz Result'),
-      ),
+      backgroundColor: AppColors.background,
+      appBar:
+          AppBar(toolbarHeight: 10.0, backgroundColor: AppColors.background),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,

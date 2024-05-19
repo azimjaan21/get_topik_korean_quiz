@@ -40,9 +40,12 @@ class QuizCard extends StatelessWidget {
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
-                Text(
-                  word,
-                  style: quizWord,
+                Center(
+                  child: Text(
+                    word,
+                    style: quizWord,
+                    textAlign: TextAlign.center,
+                  ),
                 ),
                 20.kH,
                 const Icon(
