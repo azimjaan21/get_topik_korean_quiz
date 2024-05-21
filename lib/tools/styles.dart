@@ -120,7 +120,7 @@ const resultTextGood = TextStyle(
   fontWeight: FontWeight.w700,
 );
 const resultTextBad = TextStyle(
-  color: Color.fromARGB(255, 255, 18, 1),
+  color: Color(0xFFFF1201),
   fontSize: 22,
   fontWeight: FontWeight.w700,
 );

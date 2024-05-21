@@ -37,9 +37,15 @@ class ResultScreen extends StatelessWidget {
                 ),
               ),
               circularStrokeCap: CircularStrokeCap.round,
-              progressColor: Colors.purple,
+              progressColor:  percentage == 100 || percentage >= 88
+                ?  Colors.green
+                : percentage >= 60 && percentage < 88
+                    ? Colors.amber
+                    : percentage < 60
+                        ? const Color(0xFFFF1201) : Colors.grey
+                      
             ),
-            percentage == 100 && percentage >= 88
+            percentage == 100 || percentage >= 88
                 ? const Text('완벽해요 !', style: resultTextExcel)
                 : percentage >= 60 && percentage < 88
                     ? const Text('괜찮아요 !', style: resultTextGood)

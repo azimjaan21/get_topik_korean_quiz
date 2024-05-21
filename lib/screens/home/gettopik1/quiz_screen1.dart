@@ -31,7 +31,8 @@ class _QuizScreenState extends State<QuizScreen> {
     setState(() {
       this.selectedOptionIndex = selectedOptionIndex;
       isAnswered = true;
-      isCorrect = selectedOptionIndex == unitQuizData[currentQuestionIndex].correctOptionIndex;
+      isCorrect = selectedOptionIndex ==
+          unitQuizData[currentQuestionIndex].correctOptionIndex;
       if (isCorrect) {
         correctAnswers++; // Increment correct answers count
       }
@@ -71,7 +72,8 @@ class _QuizScreenState extends State<QuizScreen> {
     double progress = (currentQuestionIndex + 1) / unitQuizData.length;
     return Scaffold(
       backgroundColor: AppColors.background,
-      appBar: AppBar(toolbarHeight: 10.0, backgroundColor: AppColors.background),
+      appBar:
+          AppBar(toolbarHeight: 10.0, backgroundColor: AppColors.background),
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.only(left: 15.0, right: 15.0, top: 10.0),
@@ -93,7 +95,8 @@ class _QuizScreenState extends State<QuizScreen> {
                   int optionIndex = entry.key;
                   String optionText = entry.value;
                   return ElevatedButton(
-                    onPressed: isAnswered ? null : () => checkAnswer(optionIndex),
+                    onPressed:
+                        isAnswered ? null : () => checkAnswer(optionIndex),
                     style: ElevatedButton.styleFrom(
                       backgroundColor: isAnswered
                           ? optionIndex == currentQuestion.correctOptionIndex
@@ -147,7 +150,8 @@ class _QuizScreenState extends State<QuizScreen> {
                             ],
                           ),
                           Text(
-                            currentQuestion.options[currentQuestion.correctOptionIndex],
+                            currentQuestion
+                                .options[currentQuestion.correctOptionIndex],
                             style: const TextStyle(
                                 color: Colors.red,
                                 fontSize: 20.0,
@@ -162,8 +166,8 @@ class _QuizScreenState extends State<QuizScreen> {
                     backgroundColor: AppColors.topBarColor),
                 child: Text(
                   currentQuestionIndex < unitQuizData.length - 1
-                      ? 'Next Question'
-                      : 'Finish Quiz',
+                      ? 'Keyingisi'
+                      : 'Quizni Tugatish',
                   style: loginText,
                 ),
               ),

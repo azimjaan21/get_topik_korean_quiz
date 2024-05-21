@@ -167,8 +167,8 @@ class _QuizScreen2State extends State<QuizScreen2> {
                     backgroundColor: AppColors.topBarColor),
                 child: Text(
                   currentQuestionIndex < unitQuizData.length - 1
-                      ? 'Next Question'
-                      : 'Finish Quiz',
+                      ? 'Keyingisi'
+                      : 'Quizni tugatish',
                   style: loginText,
                 ),
               ),
