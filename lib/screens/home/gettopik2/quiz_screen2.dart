@@ -1,36 +1,42 @@
-// ignore_for_file: library_private_types_in_public_api
-
+import 'package:get_topik_korean_quiz/databases/book2_data.dart';
+import 'package:get_topik_korean_quiz/screens/home/result_screen/result_screen.dart';
 import 'package:get_topik_korean_quiz/tools/file_importer.dart';
 import 'package:get_topik_korean_quiz/widgets/slider_to_quiz.dart';
 
-class QuizScreen extends StatefulWidget {
+class QuizScreen2 extends StatefulWidget {
   final double unitNumber;
 
-  const QuizScreen({super.key, required this.unitNumber});
+  const QuizScreen2({super.key, required this.unitNumber});
 
   @override
-  _QuizScreenState createState() => _QuizScreenState();
+  _QuizScreen2State createState() => _QuizScreen2State();
 }
 
-class _QuizScreenState extends State<QuizScreen> {
+class _QuizScreen2State extends State<QuizScreen2> {
   List<QuizTest> unitQuizData = [];
   int currentQuestionIndex = 0;
   bool isAnswered = false;
   bool isCorrect = false;
+  int selectedOptionIndex = -1;
+  int correctAnswers = 0; // Track correct answers
 
   @override
   void initState() {
     super.initState();
-    unitQuizData = book1QuizData
+    unitQuizData = book2QuizData
         .where((quiz) => quiz.unitNumber == widget.unitNumber)
         .toList();
   }
 
   void checkAnswer(int selectedOptionIndex) {
     setState(() {
+      this.selectedOptionIndex = selectedOptionIndex;
       isAnswered = true;
       isCorrect = selectedOptionIndex ==
           unitQuizData[currentQuestionIndex].correctOptionIndex;
+      if (isCorrect) {
+        correctAnswers++; // Increment correct answers count
+      }
     });
   }
 
@@ -40,8 +46,8 @@ class _QuizScreenState extends State<QuizScreen> {
         currentQuestionIndex++;
         isAnswered = false;
         isCorrect = false;
+        selectedOptionIndex = -1;
       } else {
-        // If all questions are answered, show the result (azimjaan21)
         showResult();
       }
     });
@@ -49,7 +55,7 @@ class _QuizScreenState extends State<QuizScreen> {
 
   void showResult() {
     int totalQuestions = unitQuizData.length;
-    int correctAnswers = unitQuizData.where((q) => q.isCorrect).length;
+
     Navigator.pushReplacement(
       context,
       MaterialPageRoute(
@@ -64,8 +70,7 @@ class _QuizScreenState extends State<QuizScreen> {
   @override
   Widget build(BuildContext context) {
     QuizTest currentQuestion = unitQuizData[currentQuestionIndex];
-    double progress =
-        (currentQuestionIndex + 1) / unitQuizData.length; // #total questions
+    double progress = (currentQuestionIndex + 1) / unitQuizData.length;
     return Scaffold(
       backgroundColor: AppColors.background,
       appBar:
@@ -94,14 +99,15 @@ class _QuizScreenState extends State<QuizScreen> {
                     onPressed:
                         isAnswered ? null : () => checkAnswer(optionIndex),
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: isAnswered &&
-                              optionIndex == currentQuestion.correctOptionIndex
-                          ? isCorrect
+                      backgroundColor: isAnswered
+                          ? optionIndex == currentQuestion.correctOptionIndex
                               ? Colors.green
-                              : Colors.red
+                              : selectedOptionIndex == optionIndex
+                                  ? Colors.red
+                                  : null
                           : null,
                     ),
-                    child: Text(optionText),
+                    child: Text(optionText, style: quizOpText),
                   );
                 }).toList(),
               ),
@@ -155,27 +161,17 @@ class _QuizScreenState extends State<QuizScreen> {
                         ],
                       ),
               20.kH,
-              isAnswered
-                  ? 
-                   ElevatedButton(
-                      onPressed: nextQuestion,
-                      style: ElevatedButton.styleFrom(
-                          backgroundColor: AppColors.topBarColor),
-                      child: Text(
-                        currentQuestionIndex < unitQuizData.length - 1
-                            ? 'Next Question'
-                            : 'Finish Quiz',
-                        style: loginText,
-                      ),
-                    ) : ElevatedButton(
-                      onPressed: null,
-                      child: Text(
-                        currentQuestionIndex < unitQuizData.length - 1
-                            ? 'Next Question'
-                            : 'Finish Quiz',
-                        style: loginText,
-                      ),
-                    ),
+              ElevatedButton(
+                onPressed: isAnswered ? nextQuestion : null,
+                style: ElevatedButton.styleFrom(
+                    backgroundColor: AppColors.topBarColor),
+                child: Text(
+                  currentQuestionIndex < unitQuizData.length - 1
+                      ? 'Next Question'
+                      : 'Finish Quiz',
+                  style: loginText,
+                ),
+              ),
             ],
           ),
         ),

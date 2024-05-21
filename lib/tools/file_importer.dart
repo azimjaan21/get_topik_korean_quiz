@@ -11,7 +11,6 @@ export 'package:get_topik_korean_quiz/widgets/neumorph_container.dart';
 export 'package:get_topik_korean_quiz/screens/home/widgets/top_bar.dart';
 export 'package:get_topik_korean_quiz/tools/router.dart';
 export 'package:get_topik_korean_quiz/widgets/appbar/appbar.dart';
-export 'package:get_topik_korean_quiz/screens/home/unit_quiz/unit_card.dart';
 export 'package:get_topik_korean_quiz/screens/home/widgets/random/random_appbar.dart';
 export 'package:get_topik_korean_quiz/widgets/audio/speech_card.dart';
 export 'package:get_topik_korean_quiz/tools/extentions/sized_box_extention.dart';
@@ -33,8 +32,10 @@ export 'package:get_topik_korean_quiz/screens/user_profile/user_profile_screen.d
 export 'package:get_topik_korean_quiz/auth/auth_service.dart';
 export 'package:get_topik_korean_quiz/auth/widgets/google_button.dart';
 export 'dart:async';
-export 'package:get_topik_korean_quiz/screens/home/unit_quiz/quiz_screen.dart';
+export 'package:get_topik_korean_quiz/screens/home/gettopik1/quiz_screen1.dart';
 export 'package:get_topik_korean_quiz/screens/home/widgets/custom_sliver_appbar.dart';
 export 'package:get_topik_korean_quiz/databases/book1_data.dart';
 export 'package:get_topik_korean_quiz/models/quiz.module.dart';
-export 'package:get_topik_korean_quiz/screens/home/unit_quiz/result_screen.dart';
+export 'package:get_topik_korean_quiz/screens/home/gettopik2/quiz_screen2.dart';
+export 'package:get_topik_korean_quiz/screens/home/result_screen/unit_card.dart';
+

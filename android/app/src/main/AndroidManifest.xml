@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <application
-        android:label="Gettopik uiz"
+        android:label="Gettopik Quiz"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         

@@ -47,7 +47,7 @@ const loginText = TextStyle(
 );
 
 const fieldText = TextStyle(
-  color: Color.fromARGB(255, 255, 255, 255),
+  color: Color(0xFFFFFFFF),
   fontSize: 15,
   fontWeight: FontWeight.w400,
 );
@@ -89,7 +89,7 @@ const noText = TextStyle(fontSize: 14, fontWeight: FontWeight.w700);
 const exitText = TextStyle(
   fontSize: 14,
   fontWeight: FontWeight.bold,
-  color: Color.fromARGB(255, 250, 17, 0),
+  color: Color(0xFFFA1100),
 );
 
 const logOutNotifyText = TextStyle(
@@ -97,4 +97,30 @@ const logOutNotifyText = TextStyle(
   fontWeight: FontWeight.w400,
 );
 
+final resultButText = TextStyle(
+  color: AppColors.gettopikColor,
+  fontSize: 15,
+  fontWeight: FontWeight.w400,
+);
 
+final quizOpText = TextStyle(
+  color: AppColors.topBarColor,
+  fontSize: 15,
+  fontWeight: FontWeight.w500,
+);
+
+const resultTextExcel = TextStyle(
+  color: Colors.green,
+  fontSize: 22,
+  fontWeight: FontWeight.w700,
+);
+const resultTextGood = TextStyle(
+  color: Colors.amber,
+  fontSize: 22,
+  fontWeight: FontWeight.w700,
+);
+const resultTextBad = TextStyle(
+  color: Color.fromARGB(255, 255, 18, 1),
+  fontSize: 22,
+  fontWeight: FontWeight.w700,
+);

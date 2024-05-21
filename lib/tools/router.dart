@@ -12,9 +12,7 @@ abstract class RouteName {
   static const signIn = '/signIn';
   static const resetPassword = '/resetPassword';
   static const userProfile = '/userProfile';
-    static const home1gettopik1 = '/homeGettopik1';
-
-
+  static const home1gettopik1 = '/homeGettopik1';
 }
 
 class RouterNavigator {
@@ -22,11 +20,6 @@ class RouterNavigator {
     switch (settings.name) {
       case RouteName.home:
         return MaterialPageRoute(builder: (_) => const HomeScreen());
-
-     
-
-      case RouteName.getTopik2:
-        return MaterialPageRoute(builder: (_) => const GetTopik2());
 
       case RouteName.randomQuiz:
         return MaterialPageRoute(builder: (_) => const RandomQuizScreen());
@@ -42,8 +35,12 @@ class RouterNavigator {
 
       case RouteName.userProfile:
         return MaterialPageRoute(builder: (_) => const UserProfileScreen());
-        case RouteName.home1gettopik1:
+
+      case RouteName.home1gettopik1:
         return MaterialPageRoute(builder: (_) => const GetTopik1Screen());
+
+      case RouteName.getTopik2:
+        return MaterialPageRoute(builder: (_) => const GetTopik2());
 
       // If smth is wrong here, this screen give info:
       default:
