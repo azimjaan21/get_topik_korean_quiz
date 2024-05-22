@@ -668,8 +668,6 @@ List<QuizTest> book1QuizData = [
     correctOptionIndex: 0,
   ),
 
-
-
   QuizTest(
     id: 23,
     unitNumber: 2.3,
@@ -697,49 +695,57 @@ List<QuizTest> book1QuizData = [
     question: '이',
     options: ['biz', 'men', 'sen', 'bu / 2 / tish'],
     correctOptionIndex: 3,
-  ),QuizTest(
+  ),
+  QuizTest(
     id: 27,
     unitNumber: 2.3,
     question: '유학생',
     options: ['o\'qituvchi', 'chet ellik talaba', 'o\'quvchi', 'talaba'],
     correctOptionIndex: 1,
-  ),QuizTest(
+  ),
+  QuizTest(
     id: 28,
     unitNumber: 2.3,
     question: '좋아하다',
     options: ['yaxshi', 'katta', 'yoqtirmoq', 'serial'],
     correctOptionIndex: 2,
-  ),QuizTest(
+  ),
+  QuizTest(
     id: 29,
     unitNumber: 2.3,
     question: '드라마',
     options: ['serial', 'gazeta', 'kino', 'kim'],
     correctOptionIndex: 0,
-  ),QuizTest(
+  ),
+  QuizTest(
     id: 30,
     unitNumber: 2.3,
     question: '신문',
     options: ['kitob', 'gazeta', 'serial', 'kino'],
     correctOptionIndex: 1,
-  ),QuizTest(
+  ),
+  QuizTest(
     id: 31,
     unitNumber: 2.3,
     question: '주무시다',
     options: ['yemoq', 'yoqtirmoq', 'uxlamoq', 'suhbatlashmoq'],
     correctOptionIndex: 2,
-  ),QuizTest(
+  ),
+  QuizTest(
     id: 32,
     unitNumber: 2.3,
     question: '점심',
     options: ['kechki ovqat', 'tushlik', 'nonushta', 'ovqat'],
     correctOptionIndex: 1,
-  ),QuizTest(
+  ),
+  QuizTest(
     id: 33,
     unitNumber: 2.3,
     question: '마시다',
     options: ['ichmoq', 'yemoq', 'tayyorlamoq', 'gapirmoq'],
     correctOptionIndex: 0,
-  ),QuizTest(
+  ),
+  QuizTest(
     id: 34,
     unitNumber: 2.3,
     question: '말씀하시다',
@@ -823,7 +829,6 @@ List<QuizTest> book1QuizData = [
     options: ['ammo', 'va', 'shuning uchun', 'u'],
     correctOptionIndex: 1,
   ),
-
 
   // #3.1 Unit
   QuizTest(
@@ -1519,7 +1524,7 @@ List<QuizTest> book1QuizData = [
     id: 5,
     unitNumber: 3.2,
     question: '이월',
-    options: [ 'yanvar', 'aprel','fevral','mart'],
+    options: ['yanvar', 'aprel', 'fevral', 'mart'],
     correctOptionIndex: 2,
   ),
   QuizTest(
@@ -1962,7 +1967,6 @@ List<QuizTest> book1QuizData = [
     options: ['ta`til(umumiy)', 'darsdan chiqmoq', 'dam olmoq', 'hafta oxiri'],
     correctOptionIndex: 0,
   ),
-
 
   // #3.3 Unit
 
@@ -3773,14 +3777,12 @@ List<QuizTest> book1QuizData = [
     correctOptionIndex: 0,
   ),
 
-
   // #5.3 Unit
-    QuizTest(
+  QuizTest(
     id: 1,
     unitNumber: 5.3,
     question: '나',
     options: ['biz', 'men', 'sen', 'u'],
     correctOptionIndex: 1,
   ),
-
 ];
