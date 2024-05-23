@@ -23,7 +23,7 @@ class GetTopik4 extends StatelessWidget {
               20.kH,
               UnitCard(
                 unitTitle: '만나서 반갑습니다',
-                unitImage: "assets/gBook4/unit2_1.jpg",
+                unitImage: "assets/gBook1/unit2_1.jpg",
                 unitNumber: '2.1',
                 ontap: () {
                   Navigator.push(
