@@ -1,4 +1,4 @@
-import 'package:get_topik_korean_quiz/screens/home/gettopik1/gettopik1_screen.dart';
+
 import 'package:get_topik_korean_quiz/tools/file_importer.dart';
 
 abstract class RouteName {
@@ -7,7 +7,10 @@ abstract class RouteName {
   // Home Vocabulary options :
   static const getTopik1 = '/getTopik1';
   static const getTopik2 = '/getTopik2';
+  static const getTopik3 = '/getTopik3';
+  static const getTopik4 = '/getTopik4';
   static const randomQuiz = '/randomQuiz';
+  // #auth
   static const signUp = '/signUp';
   static const signIn = '/signIn';
   static const resetPassword = '/resetPassword';
@@ -41,6 +44,12 @@ class RouterNavigator {
 
       case RouteName.getTopik2:
         return MaterialPageRoute(builder: (_) => const GetTopik2());
+
+        case RouteName.getTopik3:
+        return MaterialPageRoute(builder: (_) => const GetTopik3());
+
+        case RouteName.getTopik4:
+        return MaterialPageRoute(builder: (_) => const GetTopik4());
 
       // If smth is wrong here, this screen give info:
       default:

@@ -47,12 +47,12 @@ class HomeScreen extends StatelessWidget {
                       NeumorphContainer(
                         bookTitle: 'assets/images/book1.png',
                         onTap: () => Navigator.of(context)
-                            .pushNamed(RouteName.getTopik1),
+                            .pushNamed(RouteName.getTopik3),
                       ),
                       NeumorphContainer(
                         bookTitle: 'assets/images/book2.png',
                         onTap: () => Navigator.of(context)
-                            .pushNamed(RouteName.getTopik2),
+                            .pushNamed(RouteName.getTopik4),
                       ),
                     ],
                   ),

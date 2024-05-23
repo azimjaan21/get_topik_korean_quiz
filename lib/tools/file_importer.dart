@@ -38,4 +38,6 @@ export 'package:get_topik_korean_quiz/databases/book1_data.dart';
 export 'package:get_topik_korean_quiz/models/quiz.module.dart';
 export 'package:get_topik_korean_quiz/screens/home/gettopik2/quiz_screen2.dart';
 export 'package:get_topik_korean_quiz/screens/home/result_screen/unit_card.dart';
-
+export 'package:get_topik_korean_quiz/screens/home/gettopik1/gettopik1_screen.dart';
+export 'package:get_topik_korean_quiz/screens/home/gettopik3/gettopik3.dart';
+export 'package:get_topik_korean_quiz/screens/home/gettopik4/gettopik4.dart';
