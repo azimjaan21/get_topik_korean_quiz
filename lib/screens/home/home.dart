@@ -45,12 +45,12 @@ class HomeScreen extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       NeumorphContainer(
-                        bookTitle: 'assets/images/book1.png',
+                        bookTitle: 'assets/images/book3.png',
                         onTap: () => Navigator.of(context)
                             .pushNamed(RouteName.getTopik3),
                       ),
                       NeumorphContainer(
-                        bookTitle: 'assets/images/book2.png',
+                        bookTitle: 'assets/images/book4.png',
                         onTap: () => Navigator.of(context)
                             .pushNamed(RouteName.getTopik4),
                       ),
