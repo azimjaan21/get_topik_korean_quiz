@@ -139,8 +139,8 @@ class GetTopik2 extends StatelessWidget {
                 },
               ),
               UnitCard(
-                unitTitle: '여행을 가고 싶어요',
-                unitImage: "assets/gBook2/unit5_1.jpg",
+                unitTitle: '감기가 더 심해졌어요',
+                unitImage: "assets/gBook2/unit4_1.png",
                 unitNumber: '4.1',
                 ontap: () {
                   Navigator.push(
@@ -152,8 +152,8 @@ class GetTopik2 extends StatelessWidget {
                 },
               ),
               UnitCard(
-                unitTitle: '영화를 보려고 해요',
-                unitImage: "assets/gBook2/unit5_3.png",
+                unitTitle: '뉴욕으로 소포를 보내려고\n하는데 얼마나 걸려요?',
+                unitImage: "assets/gBook2/unit4_2.jpg",
                 unitNumber: '4.2',
                 ontap: () {
                   Navigator.push(
@@ -165,8 +165,8 @@ class GetTopik2 extends StatelessWidget {
                 },
               ),
               UnitCard(
-                unitTitle: '여행을 가고 싶어요',
-                unitImage: "assets/gBook2/unit5_2.jpg",
+                unitTitle: '10만 원만\n환전할게요',
+                unitImage: "assets/gBook2/unit4_3.png",
                 unitNumber: '4.3',
                 ontap: () {
                   Navigator.push(
@@ -178,8 +178,8 @@ class GetTopik2 extends StatelessWidget {
                 },
               ),
               UnitCard(
-                unitTitle: '여행을 가고 싶어요',
-                unitImage: "assets/gBook2/unit5_2.jpg",
+                unitTitle: '경주에 간 적이 있어요 ?',
+                unitImage: "assets/gBook2/unit5_1.jpg",
                 unitNumber: '5.1',
                 ontap: () {
                   Navigator.push(
@@ -191,7 +191,7 @@ class GetTopik2 extends StatelessWidget {
                 },
               ),
               UnitCard(
-                unitTitle: '여행을 가고 싶어요',
+                unitTitle: '음악을 들으면서\n운동을 하고 있어요',
                 unitImage: "assets/gBook2/unit5_2.jpg",
                 unitNumber: '5.2',
                 ontap: () {
@@ -204,8 +204,8 @@ class GetTopik2 extends StatelessWidget {
                 },
               ),
               UnitCard(
-                unitTitle: '여행을 가고 싶어요',
-                unitImage: "assets/gBook2/unit5_2.jpg",
+                unitTitle: '모르는 것이 있으면\n언제든지 물어 보세요',
+                unitImage: "assets/gBook2/unit5_3.jpg",
                 unitNumber: '5.3',
                 ontap: () {
                   Navigator.push(
