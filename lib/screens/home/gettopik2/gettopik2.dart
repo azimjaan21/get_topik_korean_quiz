@@ -126,7 +126,7 @@ class GetTopik2 extends StatelessWidget {
                 },
               ),
               UnitCard(
-                unitTitle: '더컸으면 좋겠어요',
+                unitTitle: '더 컸으면 좋겠어요',
                 unitImage: "assets/gBook2/unit3_3.png",
                 unitNumber: '3.3',
                 ontap: () {
