@@ -60,6 +60,7 @@ class UnitCard extends StatelessWidget {
                   child: Text(
                     unitTitle,
                     style: cardText,
+                    textAlign: TextAlign.center,
                   ),
                 ),
               ),

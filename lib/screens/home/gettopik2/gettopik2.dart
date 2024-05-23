@@ -22,8 +22,8 @@ class GetTopik2 extends StatelessWidget {
             children: [
               20.kH,
               UnitCard(
-                unitTitle: '만나서 반갑습니다',
-                unitImage: "assets/gBook2/unit2_1.jpg",
+                unitTitle: '학교에서 명동까지 지하철로\n얼마나 걸려요 ?',
+                unitImage: "assets/gBook2/unit1_1.jpg",
                 unitNumber: '1.1',
                 ontap: () {
                   Navigator.push(
@@ -35,8 +35,8 @@ class GetTopik2 extends StatelessWidget {
                 },
               ),
               UnitCard(
-                unitTitle: '저는 제인입니다',
-                unitImage: "assets/images/gBook2/unit2_3.png",
+                unitTitle: '인사동에 가려면 몇번\n버스를 타야 해요 ?',
+                unitImage: "assets/gBook2/unit1_2.jpg",
                 unitNumber: '1.2',
                 ontap: () {
                   Navigator.push(
@@ -48,8 +48,8 @@ class GetTopik2 extends StatelessWidget {
                 },
               ),
               UnitCard(
-                unitTitle: '이 사람은 누구에요?',
-                unitImage: "assets/images/gBook2/unit2_2.jpg",
+                unitTitle: '육교를 지나서 우체국\n앞에서 세워 주세요 ?',
+                unitImage: "assets/gBook2/unit1_3.png",
                 unitNumber: '1.3',
                 ontap: () {
                   Navigator.push(
@@ -61,8 +61,8 @@ class GetTopik2 extends StatelessWidget {
                 },
               ),
               UnitCard(
-                unitTitle: '몇 시에 일어나요 ?',
-                unitImage: "assets/images/gBook2/unit3_1.jpg",
+                unitTitle: '점심에 무엇을 먹을까요 ?',
+                unitImage: "assets/gBook2/unit2_1.jpg",
                 unitNumber: '2.1',
                 ontap: () {
                   Navigator.push(
@@ -74,8 +74,8 @@ class GetTopik2 extends StatelessWidget {
                 },
               ),
               UnitCard(
-                unitTitle: '오늘이 몇 월 며칠이에요?',
-                unitImage: "assets/images/gBook2/unit3_2.jpg",
+                unitTitle: '기숙사에서 요리해도 돼요 ?',
+                unitImage: "assets/gBook2/unit2_2.jpg",
                 unitNumber: '2.2',
                 ontap: () {
                   Navigator.push(
@@ -87,8 +87,8 @@ class GetTopik2 extends StatelessWidget {
                 },
               ),
               UnitCard(
-                unitTitle: '주말에 무엇을 했어요 ?',
-                unitImage: "assets/images/gBook2/unit3_3.png",
+                unitTitle: '저는 수영을 할 수 있어요',
+                unitImage: "assets/gBook2/unit2_3.jpg",
                 unitNumber: '2.3',
                 ontap: () {
                   Navigator.push(
@@ -100,8 +100,8 @@ class GetTopik2 extends StatelessWidget {
                 },
               ),
               UnitCard(
-                unitTitle: '가방 안에 책과 공책이 있어요 ?',
-                unitImage: "assets/images/gBook2/unit4_1.jpg",
+                unitTitle: '옷을 사라 가요',
+                unitImage: "assets/gBook2/unit3_1.jpg",
                 unitNumber: '3.1',
                 ontap: () {
                   Navigator.push(
@@ -113,8 +113,8 @@ class GetTopik2 extends StatelessWidget {
                 },
               ),
               UnitCard(
-                unitTitle: '도서관에서 공부를 해요 ?',
-                unitImage: "assets/images/gBook2/unit4_2.jpg",
+                unitTitle: '조금 작은 것 같아요',
+                unitImage: "assets/gBook2/unit3_2.jpeg",
                 unitNumber: '3.2',
                 ontap: () {
                   Navigator.push(
@@ -126,8 +126,8 @@ class GetTopik2 extends StatelessWidget {
                 },
               ),
               UnitCard(
-                unitTitle: '오른쪽으로 가세요',
-                unitImage: "assets/images/gBook2/unit4_3.jpg",
+                unitTitle: '더컸으면 좋겠어요',
+                unitImage: "assets/gBook2/unit3_3.png",
                 unitNumber: '3.3',
                 ontap: () {
                   Navigator.push(
@@ -140,7 +140,7 @@ class GetTopik2 extends StatelessWidget {
               ),
               UnitCard(
                 unitTitle: '여행을 가고 싶어요',
-                unitImage: "assets/images/gBook2/unit5_1.jpg",
+                unitImage: "assets/gBook2/unit5_1.jpg",
                 unitNumber: '4.1',
                 ontap: () {
                   Navigator.push(
@@ -153,7 +153,7 @@ class GetTopik2 extends StatelessWidget {
               ),
               UnitCard(
                 unitTitle: '영화를 보려고 해요',
-                unitImage: "assets/images/gBook2/unit5_3.png",
+                unitImage: "assets/gBook2/unit5_3.png",
                 unitNumber: '4.2',
                 ontap: () {
                   Navigator.push(
@@ -166,7 +166,7 @@ class GetTopik2 extends StatelessWidget {
               ),
               UnitCard(
                 unitTitle: '여행을 가고 싶어요',
-                unitImage: "assets/images/gBook2/unit5_2.jpg",
+                unitImage: "assets/gBook2/unit5_2.jpg",
                 unitNumber: '4.3',
                 ontap: () {
                   Navigator.push(
@@ -179,7 +179,7 @@ class GetTopik2 extends StatelessWidget {
               ),
               UnitCard(
                 unitTitle: '여행을 가고 싶어요',
-                unitImage: "assets/images/gBook2/unit5_2.jpg",
+                unitImage: "assets/gBook2/unit5_2.jpg",
                 unitNumber: '5.1',
                 ontap: () {
                   Navigator.push(
@@ -192,7 +192,7 @@ class GetTopik2 extends StatelessWidget {
               ),
               UnitCard(
                 unitTitle: '여행을 가고 싶어요',
-                unitImage: "assets/images/gBook2/unit5_2.jpg",
+                unitImage: "assets/gBook2/unit5_2.jpg",
                 unitNumber: '5.2',
                 ontap: () {
                   Navigator.push(
@@ -205,7 +205,7 @@ class GetTopik2 extends StatelessWidget {
               ),
               UnitCard(
                 unitTitle: '여행을 가고 싶어요',
-                unitImage: "assets/images/gBook2/unit5_2.jpg",
+                unitImage: "assets/gBook2/unit5_2.jpg",
                 unitNumber: '5.3',
                 ontap: () {
                   Navigator.push(
