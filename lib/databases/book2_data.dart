@@ -10,5 +10,13 @@ List<QuizTest> book2QuizData = [
     options: ['avtobus', 'transport kartasi', 'transport vositalari', 'metro'],
     correctOptionIndex: 2,
   ),
+
+    QuizTest(
+    id: 2,
+    unitNumber: 1.1,
+    question: '나',
+    options: ['biz', 'men', 'sen', 'u'],
+    correctOptionIndex: 1,
+  ),
   
 ];
