@@ -3325,10 +3325,10 @@ List<QuizTest> book1QuizData = [
     unitNumber: 5.2,
     question: '취미 활동',
     options: [
-      'Hobbiy mashg`ulotlar',
-      'Sayr qilmoq',
-      'O`yin o`ynamaq (Komp/Telda)',
-      'Internetda vaqt o`tkazmoq'
+      'hobbiy mashg\'ulotlar',
+      'sayr qilmoq',
+      'o\'yin o\'ynamoq (online)',
+      'internetda vaqt o\'tkazmoq'
     ],
     correctOptionIndex: 0,
   ),
@@ -3337,46 +3337,46 @@ List<QuizTest> book1QuizData = [
     unitNumber: 5.2,
     question: '산책을 하다',
     options: [
-      'Sayr qilmoq',
-      'Hobbiy mashg`ulotlar',
-      'O`yin o`ynamaq (Komp/Telda)',
-      'Internetda vaqt o`tkazmoq'
+      'o\'yin o\'ynamoq (online)',
+      'hobbiy mashg\'ulotlar',
+      'sayr qilmoq',
+      'internetda vaqt o\'tkazmoq'
     ],
-    correctOptionIndex: 0,
+    correctOptionIndex: 2,
   ),
   QuizTest(
     id: 3,
     unitNumber: 5.2,
     question: '게임을 하다',
     options: [
-      'O`yin o`ynamaq (Komp/Telda)',
-      'Hobbiy mashg`ulotlar',
-      'Sayr qilmoq',
-      'Internetda vaqt o`tkazmoq'
+      'hobbiy mashg\'ulotlar',
+      'sayr qilmoq',
+      'internetda vaqt o\'tkazmoq',
+      'o\'yin o\'ynamoq (online)'
     ],
-    correctOptionIndex: 0,
+    correctOptionIndex: 3,
   ),
   QuizTest(
     id: 4,
     unitNumber: 5.2,
     question: '인터넷을 하다',
     options: [
-      'Internetda vaqt o`tkazmoq',
-      'Hobbiy mashg`ulotlar',
-      'Sayr qilmoq',
-      'O`yin o`ynamaq (Komp/Telda)'
+      'o\'yin o\'ynamoq (online)',
+      'hobbiy mashg\'ulotlar',
+      'sayr qilmoq',
+      'internetda vaqt o\'tkazmoq'
     ],
-    correctOptionIndex: 0,
+    correctOptionIndex: 3,
   ),
   QuizTest(
     id: 5,
     unitNumber: 5.2,
     question: '춤을 추다',
     options: [
-      'Raqsga tushmoq',
-      'Hobbiy mashg`ulotlar',
-      'Sayr qilmoq',
-      'O`yin o`ynamaq (Komp/Telda)'
+      'raqsga tushmoq',
+      'uxlamoq',
+      'sayr qilmoq',
+      'tush ko\'rmoq',
     ],
     correctOptionIndex: 0,
   ),
@@ -3385,34 +3385,34 @@ List<QuizTest> book1QuizData = [
     unitNumber: 5.2,
     question: '기타를 치다',
     options: [
-      'Gitara chalmoq',
-      'Hobbiy mashg`ulotlar',
-      'Sayr qilmoq',
-      'O`yin o`ynamaq (Komp/Telda)'
+      'raqsga tushmoq',
+      'uxlamoq',
+      'gitara chalmoq',
+      'sayr qilmoq',
     ],
-    correctOptionIndex: 0,
+    correctOptionIndex: 2,
   ),
   QuizTest(
     id: 7,
     unitNumber: 5.2,
     question: '그림을 그리다',
     options: [
-      'Rasm chizmoq',
-      'Hobbiy mashg`ulotlar',
-      'Sayr qilmoq',
-      'O`yin o`ynamaq (Komp/Telda)'
+      'raqsga tushmoq',
+      'uxlamoq',
+      'rasm chizmoq',
+      'tush ko\'rmoq',
     ],
-    correctOptionIndex: 0,
+    correctOptionIndex: 2,
   ),
   QuizTest(
     id: 8,
     unitNumber: 5.2,
     question: '사진을 찍다',
     options: [
-      'Rasmga olmoq',
-      'Hobbiy mashg`ulotlar',
-      'Sayr qilmoq',
-      'O`yin o`ynamaq (Komp/Telda)'
+      'rasmga olmoq',
+      'uxlamoq',
+      'rasm chizmoq',
+      'tush ko\'rmoq',
     ],
     correctOptionIndex: 0,
   ),
@@ -3421,23 +3421,18 @@ List<QuizTest> book1QuizData = [
     unitNumber: 5.2,
     question: '배드민턴을 치다',
     options: [
-      'Badminton o`ynamoq',
-      'Hobbiy mashg`ulotlar',
-      'Sayr qilmoq',
-      'O`yin o`ynamaq (Komp/Telda)'
+      'raqsga tushmoq',
+      'uxlamoq',
+      'gitara chalmoq',
+      'badminton o\'ynamoq',
     ],
-    correctOptionIndex: 0,
+    correctOptionIndex: 3,
   ),
   QuizTest(
     id: 10,
     unitNumber: 5.2,
     question: '동사',
-    options: [
-      'Fe`l',
-      'Hobbiy mashg`ulotlar',
-      'Sayr qilmoq',
-      'O`yin o`ynamaq (Komp/Telda)'
-    ],
+    options: ['fe\'l', 'sifat', 'uka', 'ot'],
     correctOptionIndex: 0,
   ),
   QuizTest(
@@ -3445,10 +3440,10 @@ List<QuizTest> book1QuizData = [
     unitNumber: 5.2,
     question: '듣다',
     options: [
-      'Eshitmoq',
-      'Hobbiy mashg`ulotlar',
-      'Sayr qilmoq',
-      'O`yin o`ynamaq (Komp/Telda)'
+      'eshitmoq',
+      'uxlamoq',
+      'gapirmoq',
+      'o\'ynamoq',
     ],
     correctOptionIndex: 0,
   ),
@@ -3457,22 +3452,22 @@ List<QuizTest> book1QuizData = [
     unitNumber: 5.2,
     question: '걷다',
     options: [
-      'Piyoda yurmoq',
-      'Hobbiy mashg`ulotlar',
-      'Sayr qilmoq',
-      'O`yin o`ynamaq (Komp/Telda)'
+      'mashq qilmoq',
+      'raqsga tushmoq',
+      'uxlamoq',
+      'piyoda yurmoq',
     ],
-    correctOptionIndex: 0,
+    correctOptionIndex: 3,
   ),
   QuizTest(
     id: 13,
     unitNumber: 5.2,
     question: '묻다',
     options: [
-      'So`ramoq',
-      'Hobbiy mashg`ulotlar',
-      'Sayr qilmoq',
-      'O`yin o`ynamaq (Komp/Telda)'
+      'so\'ramoq',
+      'piyoda yurmoq',
+      'mashq qilmoq',
+      'raqsga tushmoq',
     ],
     correctOptionIndex: 0,
   ),
@@ -3481,34 +3476,34 @@ List<QuizTest> book1QuizData = [
     unitNumber: 5.2,
     question: '싣다',
     options: [
-      'Yuklamoq/Ortmoq',
-      'Hobbiy mashg`ulotlar',
-      'Sayr qilmoq',
-      'O`yin o`ynamaq (Komp/Telda)'
+      'eshitmoq',
+      'mashq qilmoq',
+      'raqsga tushmoq',
+      'yuklamoq',
     ],
-    correctOptionIndex: 0,
+    correctOptionIndex: 3,
   ),
   QuizTest(
     id: 15,
     unitNumber: 5.2,
     question: '닫다',
     options: [
-      'Yopmoq',
-      'Hobbiy mashg`ulotlar',
-      'Sayr qilmoq',
-      'O`yin o`ynamaq (Komp/Telda)'
+      'piyoda yurmoq',
+      'mashq qilmoq',
+      'yopmoq',
+      'raqsga tushmoq',
     ],
-    correctOptionIndex: 0,
+    correctOptionIndex: 2,
   ),
   QuizTest(
     id: 16,
     unitNumber: 5.2,
     question: '받다',
     options: [
-      'Olmoq/Qabul qilmoq',
-      'Hobbiy mashg`ulotlar',
-      'Sayr qilmoq',
-      'O`yin o`ynamaq (Komp/Telda)'
+      'olmoq / qabul qilmoq',
+      'piyoda yurmoq',
+      'mashq qilmoq',
+      'raqsga tushmoq',
     ],
     correctOptionIndex: 0,
   ),
@@ -3517,10 +3512,10 @@ List<QuizTest> book1QuizData = [
     unitNumber: 5.2,
     question: '비싸다',
     options: [
-      'Qimmat',
-      'Hobbiy mashg`ulotlar',
-      'Sayr qilmoq',
-      'O`yin o`ynamaq (Komp/Telda)'
+      'qimmat',
+      'arzon',
+      'narx',
+      'narxi pasaymoq',
     ],
     correctOptionIndex: 0,
   ),
@@ -3529,24 +3524,24 @@ List<QuizTest> book1QuizData = [
     unitNumber: 5.2,
     question: '버스',
     options: [
-      'Avtobus',
-      'Hobbiy mashg`ulotlar',
-      'Sayr qilmoq',
-      'O`yin o`ynamaq (Komp/Telda)'
+      'metro',
+      'avtobus',
+      'mashina',
+      'poyezd',
     ],
-    correctOptionIndex: 0,
+    correctOptionIndex: 1,
   ),
   QuizTest(
     id: 19,
     unitNumber: 5.2,
     question: '싸다',
     options: [
-      'Arzon',
-      'Hobbiy mashg`ulotlar',
-      'Sayr qilmoq',
-      'O`yin o`ynamaq (Komp/Telda)'
+      'qimmat',
+      'arzon',
+      'narx',
+      'narxi pasaymoq',
     ],
-    correctOptionIndex: 0,
+    correctOptionIndex: 1,
   ),
   QuizTest(
     id: 20,
@@ -3554,9 +3549,9 @@ List<QuizTest> book1QuizData = [
     question: '떡볶이',
     options: [
       'Tokbukki',
-      'Hobbiy mashg`ulotlar',
-      'Sayr qilmoq',
-      'O`yin o`ynamaq (Komp/Telda)'
+      'qimmat',
+      'arzon',
+      'narx',
     ],
     correctOptionIndex: 0,
   ),
@@ -3565,34 +3560,34 @@ List<QuizTest> book1QuizData = [
     unitNumber: 5.2,
     question: '가끔',
     options: [
-      'Ba`zan',
-      'Hobbiy mashg`ulotlar',
-      'Sayr qilmoq',
-      'O`yin o`ynamaq (Komp/Telda)'
+      'hech qachon',
+      'tez-tez',
+      'har doim',
+      'ba\'zan',
     ],
-    correctOptionIndex: 0,
+    correctOptionIndex: 3,
   ),
   QuizTest(
     id: 22,
     unitNumber: 5.2,
     question: '술',
     options: [
-      'Aroq',
-      'Hobbiy mashg`ulotlar',
-      'Sayr qilmoq',
-      'O`yin o`ynamaq (Komp/Telda)'
+      'suv',
+      'hobbiy',
+      'aroq',
+      'qush',
     ],
-    correctOptionIndex: 0,
+    correctOptionIndex: 2,
   ),
   QuizTest(
     id: 23,
     unitNumber: 5.2,
     question: '콜라',
     options: [
-      'Cola',
-      'Hobbiy mashg`ulotlar',
-      'Sayr qilmoq',
-      'O`yin o`ynamaq (Komp/Telda)'
+      'cola',
+      'suv',
+      'aroq',
+      'tez-tez',
     ],
     correctOptionIndex: 0,
   ),
@@ -3601,22 +3596,22 @@ List<QuizTest> book1QuizData = [
     unitNumber: 5.2,
     question: '배가 고프다',
     options: [
-      'Qorni och bo`lmoq',
-      'Hobbiy mashg`ulotlar',
-      'Sayr qilmoq',
-      'O`yin o`ynamaq (Komp/Telda)'
+      'mashq qilmoq',
+      'raqsga tushmoq',
+      'qorni och bo\'lmoq',
+      'sayr qilmoq',
     ],
-    correctOptionIndex: 0,
+    correctOptionIndex: 2,
   ),
   QuizTest(
     id: 25,
     unitNumber: 5.2,
     question: '시내',
     options: [
-      'Shahar markazi',
-      'Hobbiy mashg`ulotlar',
-      'Sayr qilmoq',
-      'O`yin o`ynamaq (Komp/Telda)'
+      'shahar markazi',
+      'sayohat',
+      'yangi',
+      'avtobus',
     ],
     correctOptionIndex: 0,
   ),
@@ -3625,46 +3620,46 @@ List<QuizTest> book1QuizData = [
     unitNumber: 5.2,
     question: '믿다',
     options: [
-      'Ishonmoq',
-      'Hobbiy mashg`ulotlar',
-      'Sayr qilmoq',
-      'O`yin o`ynamaq (Komp/Telda)'
+      'mashq qilmoq',
+      'ishonmoq',
+      'raqsga tushmoq',
+      'vada bermoq',
     ],
-    correctOptionIndex: 0,
+    correctOptionIndex: 1,
   ),
   QuizTest(
     id: 27,
     unitNumber: 5.2,
     question: '길',
     options: [
-      'Yo`l',
-      'Hobbiy mashg`ulotlar',
-      'Sayr qilmoq',
-      'O`yin o`ynamaq (Komp/Telda)'
+      'katta',
+      'xarita',
+      'yo\'l',
+      'qisqa',
     ],
-    correctOptionIndex: 0,
+    correctOptionIndex: 2,
   ),
   QuizTest(
     id: 28,
     unitNumber: 5.2,
     question: '잘',
     options: [
-      'Yaxshi',
-      'Hobbiy mashg`ulotlar',
-      'Sayr qilmoq',
-      'O`yin o`ynamaq (Komp/Telda)'
+      'charchamoq',
+      'yomon',
+      'sayr qilmoq',
+      'yaxshi',
     ],
-    correctOptionIndex: 0,
+    correctOptionIndex: 3,
   ),
   QuizTest(
     id: 29,
     unitNumber: 5.2,
     question: '모르다',
     options: [
-      'Bilmaslik',
-      'Hobbiy mashg`ulotlar',
-      'Sayr qilmoq',
-      'O`yin o`ynamaq (Komp/Telda)'
+      'bilmaslik',
+      'bosh',
+      'so\'ramoq',
+      'bosh kiyim',
     ],
     correctOptionIndex: 0,
   ),
@@ -3672,23 +3667,18 @@ List<QuizTest> book1QuizData = [
     id: 30,
     unitNumber: 5.2,
     question: '아주머니',
-    options: [
-      'Xola',
-      'Hobbiy mashg`ulotlar',
-      'Sayr qilmoq',
-      'O`yin o`ynamaq (Komp/Telda)'
-    ],
-    correctOptionIndex: 0,
+    options: ['ona', 'xola', 'amaki', 'aka'],
+    correctOptionIndex: 1,
   ),
   QuizTest(
     id: 31,
     unitNumber: 5.2,
     question: '선물',
     options: [
-      'Sovg`a',
-      'Hobbiy mashg`ulotlar',
-      'Sayr qilmoq',
-      'O`yin o`ynamaq (Komp/Telda)'
+      'sovg\'a',
+      'hobbiy',
+      'topshiriq',
+      'taklifnoma',
     ],
     correctOptionIndex: 0,
   ),
@@ -3697,22 +3687,22 @@ List<QuizTest> book1QuizData = [
     unitNumber: 5.2,
     question: '에어컨',
     options: [
-      'Konditsioner',
-      'Hobbiy mashg`ulotlar',
-      'Sayr qilmoq',
-      'O`yin o`ynamaq (Komp/Telda)'
+      'televizor',
+      'konditsioner',
+      'moslama',
+      'muzlatgich',
     ],
-    correctOptionIndex: 0,
+    correctOptionIndex: 1,
   ),
   QuizTest(
     id: 33,
     unitNumber: 5.2,
     question: '켜다',
     options: [
-      'Yoqmoq/Qo`shmoq',
-      'Hobbiy mashg`ulotlar',
-      'Sayr qilmoq',
-      'O`yin o`ynamaq (Komp/Telda)'
+      'yoqmoq / qo\'shmoq',
+      'harkat qilmoq',
+      'sayr qilmoq',
+      'kelmoq',
     ],
     correctOptionIndex: 0,
   ),
@@ -3721,23 +3711,18 @@ List<QuizTest> book1QuizData = [
     unitNumber: 5.2,
     question: '하루 종일',
     options: [
-      'Kun davomida',
-      'Hobbiy mashg`ulotlar',
-      'Sayr qilmoq',
-      'O`yin o`ynamaq (Komp/Telda)'
+      'tez-tez',
+      'hafta kuni',
+      'kun davomida',
+      'telefonda gaplashmoq',
     ],
-    correctOptionIndex: 0,
+    correctOptionIndex: 2,
   ),
   QuizTest(
     id: 35,
     unitNumber: 5.2,
     question: '정말',
-    options: [
-      'Rostan/Juda',
-      'Hobbiy mashg`ulotlar',
-      'Sayr qilmoq',
-      'O`yin o`ynamaq (Komp/Telda)'
-    ],
+    options: ['rostan / juda', 'tez-tez', 'har doim', 'lekin / ammo'],
     correctOptionIndex: 0,
   ),
   QuizTest(
@@ -3745,22 +3730,22 @@ List<QuizTest> book1QuizData = [
     unitNumber: 5.2,
     question: '피곤하다',
     options: [
-      'Charchagan/Horg`in',
-      'Hobbiy mashg`ulotlar',
-      'Sayr qilmoq',
-      'O`yin o`ynamaq (Komp/Telda)'
+      'bilmaslik',
+      'charchagan',
+      'sayr qilish',
+      'boshlash',
     ],
-    correctOptionIndex: 0,
+    correctOptionIndex: 1,
   ),
   QuizTest(
     id: 37,
     unitNumber: 5.2,
     question: '체육관',
     options: [
-      'Sport zal',
-      'Hobbiy mashg`ulotlar',
-      'Sayr qilmoq',
-      'O`yin o`ynamaq (Komp/Telda)'
+      'sport zal',
+      'metro bekati',
+      'avtobus bekati',
+      'teatr',
     ],
     correctOptionIndex: 0,
   ),
@@ -3769,12 +3754,12 @@ List<QuizTest> book1QuizData = [
     unitNumber: 5.2,
     question: '앞으로',
     options: [
-      'Kelajakda',
-      'Hobbiy mashg`ulotlar',
-      'Sayr qilmoq',
-      'O`yin o`ynamaq (Komp/Telda)'
+      'har doim',
+      'og\'rimoq',
+      'tez-tez',
+      'kelajakda',
     ],
-    correctOptionIndex: 0,
+    correctOptionIndex: 3,
   ),
 
   // #5.3 Unit
