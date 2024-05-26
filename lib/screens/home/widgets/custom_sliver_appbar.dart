@@ -12,9 +12,9 @@ class CustomSliverAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SliverAppBar(
-      backgroundColor: AppColors.gettopikColor,
+      backgroundColor: AppColors.topBarColor,
       leading: IconButton(
-        icon: const Icon(Icons.arrow_back_ios, color: Colors.black),
+        icon: const Icon(Icons.arrow_back_ios, color: Colors.white),
         onPressed: () => Navigator.of(context).pop(),
       ),
       expandedHeight: 200.0,
@@ -25,7 +25,7 @@ class CustomSliverAppBar extends StatelessWidget {
         title: Text(
           title,
           style: const TextStyle(
-            color: Colors.black,
+            color: Colors.white,
             fontSize: 19.0,
             fontWeight: FontWeight.w700,
           ),
