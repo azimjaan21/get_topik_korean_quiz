@@ -34,6 +34,20 @@ class GetTopik4 extends StatelessWidget {
                   );
                 },
               ),
+              //     # temporary notifier  #
+              20.kH,
+              const Text(
+                '중급 1 quiz test\nhozircha mavjud emas...',
+                textAlign: TextAlign.center,
+              ),
+              20.kH,
+              Text(
+                '중급 1차 퀴즈테스트는\n아직 나오지 않았습니다...',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                    color: AppColors.topBarColor, fontWeight: FontWeight.bold),
+              ),
+              //     # temporary notifier  #
             ],
           ),
         ),
