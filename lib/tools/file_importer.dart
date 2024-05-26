@@ -10,7 +10,6 @@ export 'package:get_topik_korean_quiz/tools/styles.dart';
 export 'package:get_topik_korean_quiz/widgets/neumorph_container.dart';
 export 'package:get_topik_korean_quiz/screens/home/widgets/top_bar.dart';
 export 'package:get_topik_korean_quiz/tools/router.dart';
-export 'package:get_topik_korean_quiz/widgets/appbar/appbar.dart';
 export 'package:get_topik_korean_quiz/screens/home/widgets/random/random_appbar.dart';
 export 'package:get_topik_korean_quiz/widgets/audio/speech_card.dart';
 export 'package:get_topik_korean_quiz/tools/extentions/sized_box_extention.dart';
