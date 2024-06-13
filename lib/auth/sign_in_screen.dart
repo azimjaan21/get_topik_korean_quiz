@@ -1,5 +1,7 @@
-import 'dart:developer';
+// ignore_for_file: use_build_context_synchronously
 
+import 'dart:developer';
+import 'dart:io'; // Required for InternetAddress lookup
 import 'package:get_topik_korean_quiz/tools/file_importer.dart';
 
 class SignInScreen extends StatefulWidget {
@@ -15,6 +17,29 @@ class _SignInScreenState extends State<SignInScreen> {
   final _email = TextEditingController();
   final _password = TextEditingController();
   bool _isLoading = false;
+  bool _isConnected = true; // Assume connected by default
+
+  @override
+  void initState() {
+    super.initState();
+    _checkInternetConnection();
+  }
+
+  Future<void> _checkInternetConnection() async {
+    try {
+      final result = await InternetAddress.lookup('google.com');
+      if (result.isNotEmpty && result[0].rawAddress.isNotEmpty) {
+        setState(() {
+          _isConnected = true;
+        });
+      }
+    } on SocketException catch (_) {
+      setState(() {
+        _isConnected = false;
+      });
+    }
+  }
+
   @override
   void dispose() {
     _email.dispose();
@@ -93,6 +118,7 @@ class _SignInScreenState extends State<SignInScreen> {
                                 await AuthService().signInWithGoogle();
                               },
                             ),
+                            25.kH,
                           ],
                         ),
                 ],
@@ -104,7 +130,7 @@ class _SignInScreenState extends State<SignInScreen> {
     );
   }
 
-  goToHome(BuildContext context) {
+  void goToHome(BuildContext context) {
     Navigator.pushReplacement(
       context,
       MaterialPageRoute(
@@ -114,6 +140,17 @@ class _SignInScreenState extends State<SignInScreen> {
   }
 
   Future<void> _login(BuildContext context) async {
+    // Check connectivity before attempting login
+    if (!_isConnected) {
+      ScaffoldMessenger.of(context).showSnackBar(
+         SnackBar(
+          backgroundColor: AppColors.gettopikColor,
+          content: const Text("Internet aloqasi yo'q!", style: TextStyle(color: Colors.black),),
+        ),
+      );
+      return;
+    }
+
     setState(() {
       _isLoading = true;
     });
@@ -126,13 +163,46 @@ class _SignInScreenState extends State<SignInScreen> {
 
       if (user != null) {
         log("User Logged In Successfully");
-        // ignore: use_build_context_synchronously
-        goToHome(context); 
+        goToHome(context);
       } else {
-        log("Something wrong in Log In...");
+        log("Something went wrong in Log In...(not registered user!)");
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
+            content: Text("Avval ro'yxatdan o'ting!"),
+          ),
+        );
+      }
+    } on FirebaseAuthException catch (e) {
+      log("FirebaseAuthException: ${e.code}");
+      if (e.code == 'user-not-found') {
+        log("User not found");
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
+            content: Text("User not registered. Please sign up."),
+          ),
+        );
+      } else if (e.code == 'wrong-password') {
+        log("Wrong password");
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
+            content: Text("Incorrect password. Please try again."),
+          ),
+        );
+      } else {
+        log("Error during login: $e");
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text("Error during login: ${e.message}"),
+          ),
+        );
       }
     } catch (e) {
       log("Error during login: $e");
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text("Error during login: $e"),
+        ),
+      );
     } finally {
       setState(() {
         _isLoading = false;
