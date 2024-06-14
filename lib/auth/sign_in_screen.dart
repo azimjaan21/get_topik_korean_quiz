@@ -167,8 +167,9 @@ class _SignInScreenState extends State<SignInScreen> {
       } else {
         log("Something went wrong in Log In...(not registered user!)");
         ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            content: Text("Avval ro'yxatdan o'ting!"),
+           SnackBar(
+             backgroundColor: AppColors.gettopikColor,
+            content: const Text("Avval ro'yxatdan o'ting!"),
           ),
         );
       }

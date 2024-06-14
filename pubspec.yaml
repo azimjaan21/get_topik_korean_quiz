@@ -23,6 +23,25 @@ dependencies:
   sqflite: ^2.3.3+1
   path: ^1.9.0
   percent_indicator: ^4.2.3
+  flutter_native_splash: ^2.4.0
+  flutter_launcher_icons: ^0.13.1
+
+  
+flutter_native_splash:
+  android: true
+  ios: true
+  web: false
+
+  color: "#120F55"
+  image: "assets/images/gettopik.png"
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/gettopik.png"
+  android_adaptive_icon_background: "#120F55"
+  min_sdk_android: 21 
+
 
 dev_dependencies:
   flutter_test:
