@@ -3,7 +3,7 @@ import 'dart:math';
 import 'package:get_topik_korean_quiz/databases/book2_data.dart';
 import 'package:get_topik_korean_quiz/screens/home/result_screen/result_screen.dart';
 import 'package:get_topik_korean_quiz/tools/file_importer.dart';
-import 'package:get_topik_korean_quiz/widgets/slider_to_quiz.dart'; 
+import 'package:get_topik_korean_quiz/widgets/slider_to_quiz.dart';
 
 class RandomQuizScreen extends StatefulWidget {
   const RandomQuizScreen({super.key});
@@ -23,14 +23,25 @@ class _RandomQuizScreenState extends State<RandomQuizScreen> {
 
   // List of available unit numbers
   List<double> availableUnitNumbers = [
-    2.1, 2.2, 2.3, 3.1, 3.2, 3.3, 4.1, 4.2, 4.3, 5.1, 5.2, 5.3
+    2.1,
+    2.2,
+    2.3,
+    3.1,
+    3.2,
+    3.3,
+    4.1,
+    4.2,
+    4.3,
+    5.1,
+    5.2,
+    5.3
   ];
 
   @override
   void initState() {
     super.initState();
 
-   // Randomly select a unit number
+    // Randomly select a unit number
     unitNumber = _getRandomUnitNumber();
 
     // Combine quiz data from book1 and book2
@@ -57,8 +68,8 @@ class _RandomQuizScreenState extends State<RandomQuizScreen> {
     setState(() {
       this.selectedOptionIndex = selectedOptionIndex;
       isAnswered = true;
-      isCorrect =
-          selectedOptionIndex == unitQuizData[currentQuestionIndex].correctOptionIndex;
+      isCorrect = selectedOptionIndex ==
+          unitQuizData[currentQuestionIndex].correctOptionIndex;
       if (isCorrect) {
         correctAnswers++; // Increment correct answers count
       }
@@ -105,11 +116,17 @@ class _RandomQuizScreenState extends State<RandomQuizScreen> {
     QuizTest currentQuestion = unitQuizData[currentQuestionIndex];
     double progress = (currentQuestionIndex + 1) / unitQuizData.length;
     return Scaffold(
-      backgroundColor: Colors.grey[300], // Replace with your desired background color
+      backgroundColor:
+          Colors.grey[300], // Replace with your desired background color
       appBar: AppBar(
-        title: const Text('Random Quiz'),
+        iconTheme: const IconThemeData(color: Colors.white),
+        title: const Text(
+          '무작위 퀴즈',
+          style: TextStyle(color: Colors.white),
+        ),
         centerTitle: true,
-        backgroundColor: AppColors.gettopikColor, // Replace with your desired app bar color
+        backgroundColor:
+            AppColors.topBarColor, // Replace with your desired app bar color
       ),
       body: SingleChildScrollView(
         child: Padding(
@@ -121,13 +138,19 @@ class _RandomQuizScreenState extends State<RandomQuizScreen> {
                 padding: const EdgeInsets.symmetric(vertical: 5.0),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.end,
-                  children: [ Text(
-                "Unit: ${_getUnitName(unitNumber)}",
-                textAlign: TextAlign.center,
-                style: const TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold, color: Colors.blue),
-                            ),
-                            Icon(Icons.keyboard_double_arrow_down_rounded, color: AppColors.topBarColor)
-                            ],),
+                  children: [
+                    Text(
+                      "Unit: ${_getUnitName(unitNumber)}",
+                      textAlign: TextAlign.center,
+                      style: const TextStyle(
+                          fontSize: 16.0,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.blue),
+                    ),
+                    Icon(Icons.keyboard_double_arrow_down_rounded,
+                        color: AppColors.topBarColor)
+                  ],
+                ),
               ),
               CustomLinearProgressIndicator(value: progress),
               10.kH,
