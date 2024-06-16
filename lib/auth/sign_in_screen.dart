@@ -1,23 +1,22 @@
 // ignore_for_file: use_build_context_synchronously
 
 import 'dart:developer';
-import 'dart:io'; // Required for InternetAddress lookup
+import 'dart:io';
 import 'package:get_topik_korean_quiz/tools/file_importer.dart';
 
 class SignInScreen extends StatefulWidget {
   const SignInScreen({super.key});
 
   @override
-  State<SignInScreen> createState() => _SignInScreenState();
+  _SignInScreenState createState() => _SignInScreenState();
 }
 
 class _SignInScreenState extends State<SignInScreen> {
   final _auth = AuthService();
-
   final _email = TextEditingController();
   final _password = TextEditingController();
   bool _isLoading = false;
-  bool _isConnected = true; // Assume connected by default
+  bool _isConnected = true;
 
   @override
   void initState() {
@@ -140,12 +139,14 @@ class _SignInScreenState extends State<SignInScreen> {
   }
 
   Future<void> _login(BuildContext context) async {
-    // Check connectivity before attempting login
     if (!_isConnected) {
       ScaffoldMessenger.of(context).showSnackBar(
-         SnackBar(
-          backgroundColor: AppColors.gettopikColor,
-          content: const Text("Internet aloqasi yo'q!", style: TextStyle(color: Colors.black),),
+        const SnackBar(
+          backgroundColor: Color.fromARGB(255, 255, 17, 0),
+          content: Text(
+            "Internet aloqasi yo'q!",
+            style: TextStyle(color: Colors.black),
+          ),
         ),
       );
       return;
@@ -164,39 +165,27 @@ class _SignInScreenState extends State<SignInScreen> {
       if (user != null) {
         log("User Logged In Successfully");
         goToHome(context);
-      } else {
-        log("Something went wrong in Log In...(not registered user!)");
-        ScaffoldMessenger.of(context).showSnackBar(
-           SnackBar(
-             backgroundColor: AppColors.gettopikColor,
-            content: const Text("Avval ro'yxatdan o'ting!"),
-          ),
-        );
       }
     } on FirebaseAuthException catch (e) {
       log("FirebaseAuthException: ${e.code}");
+
+      String errorMessage = "Something went wrong!";
+
       if (e.code == 'user-not-found') {
-        log("User not found");
-        ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            content: Text("User not registered. Please sign up."),
-          ),
-        );
+        errorMessage = "User not registered. Please sign up.";
       } else if (e.code == 'wrong-password') {
-        log("Wrong password");
-        ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            content: Text("Incorrect password. Please try again."),
-          ),
-        );
-      } else {
-        log("Error during login: $e");
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text("Error during login: ${e.message}"),
-          ),
-        );
+        errorMessage = "Incorrect password. Please try again.";
       }
+
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          backgroundColor: const Color.fromARGB(255, 255, 17, 0),
+          content: Text(
+            errorMessage,
+            style: const TextStyle(color: Colors.white),
+          ),
+        ),
+      );
     } catch (e) {
       log("Error during login: $e");
       ScaffoldMessenger.of(context).showSnackBar(

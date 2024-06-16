@@ -38,8 +38,7 @@ flutter_native_splash:
 flutter_launcher_icons:
   android: "launcher_icon"
   ios: true
-  image_path: "assets/images/gettopik.png"
-  android_adaptive_icon_background: "#120F55"
+  image_path: "assets/images/icon.png"
   min_sdk_android: 21 
 
 

@@ -108,11 +108,11 @@ class _SignUpScreenState extends State<SignUpScreen> {
 
       if (user != null) {
         log("User Created Successfully");
-        
+
         // ignore: use_build_context_synchronously
         goToHome1(context);
       } else {
-        log("Something went wrong in SignUp");
+        log("Something  in SignUp");
       }
     } catch (e) {
       log("Error during sign up: $e");
