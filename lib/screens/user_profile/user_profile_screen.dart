@@ -47,12 +47,14 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
               UserOptionsCard(
                 optionText: 'Gettopik',
                 icon: AppIcons.gettopik(width: 30.0, height: 30.0),
-                ontap: () => null,
+                ontap: () => _launchURL(
+                    Uri.parse("https://www.instagram.com/gettopik"), false),
               ),
               UserOptionsCard(
                 icon: AppIcons.telegram,
                 optionText: 'Telegram kanal',
-                ontap: () => null,
+                ontap: () =>
+                    _launchURL(Uri.parse("https://t.me/azimjaantech"), false),
               ),
               UserOptionsCard(
                 optionText: 'Adminga yozish',
@@ -63,7 +65,8 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
               UserOptionsCard(
                 optionText: 'Boshqa dasturlar',
                 icon: AppIcons.otherApps,
-                ontap: () => null,
+                ontap: () => _launchURL(
+                    Uri.parse("https://t.me/azimjaans_projects"), false),
               ),
               50.kH,
               LogOutButton(

@@ -1,22 +1,6 @@
 import 'package:get_topik_korean_quiz/models/quiz.module.dart';
 
 List<QuizTest> book2QuizData = [
-  // #1.1 Unit
-  // QuizTest(
-  //   id: 1,
-  //   unitNumber: 1.1,
-  //   question: '교통수단',
-  //   options: ['avtobus', 'transport kartasi', 'transport vositalari', 'metro'],
-  //   correctOptionIndex: 2,
-  // ),
-
-  //   QuizTest(
-  //   id: 2,
-  //   unitNumber: 1.1,
-  //   question: '나',
-  //   options: ['biz', 'men', 'sen', 'u'],
-  //   correctOptionIndex: 1,
-  // ),
 
   // #1.1 Unit
   QuizTest(
@@ -469,7 +453,7 @@ List<QuizTest> book2QuizData = [
       'minish joyi',
       'kirib borish joyi(yo\'lagi)',
       'tushish joyi',
-      'zinali kelmoq'
+      'zina orqali kelmoq'
     ],
     correctOptionIndex: 0,
   ),
@@ -493,7 +477,7 @@ List<QuizTest> book2QuizData = [
       'kirib borish joyi(yo\'lagi)',
       'minish joyi',
       'yo\'l tirband bo\'lmoq',
-      'zinali ketmoq'
+      'zina orqali ketmoq'
     ],
     correctOptionIndex: 0,
   ),
@@ -503,7 +487,7 @@ List<QuizTest> book2QuizData = [
     question: '갈아타는 곳',
     options: [
       'avtobus/metroga oid otlar',
-      'almasish(persatka) joyi(yo\'lagi)',
+      'almashish(persatka) joyi(yo\'lagi)',
       'dam olish vaqti (tanaffus)',
       'yo\'l tirband bo\'lmoq'
     ],
@@ -706,7 +690,7 @@ List<QuizTest> book2QuizData = [
     question: '노래를 부르다',
     options: [
       'yo\'l tirband bo\'lmoq',
-      'qoshiq kuylamoq',
+      'qo`shiq kuylamoq',
       'vazn tashlamoq',
       'ijaraga olmoq'
     ],

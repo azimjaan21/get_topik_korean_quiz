@@ -12,7 +12,7 @@ class CustomLinearProgressIndicator extends StatelessWidget {
       width: double.infinity,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10),
-        color: Colors.grey[300],
+        color: Colors.grey[400],
       ),
       child: Stack(
         children: [
