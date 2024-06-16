@@ -25,6 +25,7 @@ dependencies:
   percent_indicator: ^4.2.3
   flutter_native_splash: ^2.4.0
   flutter_launcher_icons: ^0.13.1
+  url_launcher: ^6.3.0
 
   
 flutter_native_splash:

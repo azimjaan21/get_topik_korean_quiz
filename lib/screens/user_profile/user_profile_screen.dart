@@ -1,7 +1,27 @@
 import 'package:get_topik_korean_quiz/tools/file_importer.dart';
+import 'package:url_launcher/url_launcher.dart';
 
-class UserProfileScreen extends StatelessWidget {
+class UserProfileScreen extends StatefulWidget {
   const UserProfileScreen({super.key});
+
+  @override
+  State<UserProfileScreen> createState() => _UserProfileScreenState();
+}
+
+class _UserProfileScreenState extends State<UserProfileScreen> {
+  void _launchURL(Uri uri, bool inApp) async {
+    try {
+      if (await canLaunchUrl(uri)) {
+        if (inApp) {
+          await launchUrl(uri, mode: LaunchMode.inAppWebView);
+        } else {
+          await launchUrl(uri, mode: LaunchMode.externalApplication);
+        }
+      }
+    } catch (e) {
+      print(e.toString());
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -37,7 +57,8 @@ class UserProfileScreen extends StatelessWidget {
               UserOptionsCard(
                 optionText: 'Adminga yozish',
                 icon: AppIcons.devContact,
-                ontap: () => null,
+                ontap: () =>
+                    _launchURL(Uri.parse("https://t.me/azimjaan21"), false),
               ),
               UserOptionsCard(
                 optionText: 'Boshqa dasturlar',
