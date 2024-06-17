@@ -1,8 +1,10 @@
 import 'package:get_topik_korean_quiz/helper/quiz_db_helper.dart';
 import 'package:get_topik_korean_quiz/tools/file_importer.dart';
+import 'package:yandex_mobileads/mobile_ads.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  MobileAds.initialize();
 
   await Firebase.initializeApp(
     options: const FirebaseOptions(

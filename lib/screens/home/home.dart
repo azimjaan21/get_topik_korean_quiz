@@ -5,12 +5,13 @@ class HomeScreen extends StatelessWidget {
 
   // Simulating a loading delay (e.g., fetching data or initializing resources)
   Future<void> _simulateLoading() async {
-    await Future.delayed(const Duration(seconds: 2)); // Adjust the delay as needed
+    await Future.delayed(
+        const Duration(seconds: 2)); // Adjust the delay as needed
   }
 
   @override
   Widget build(BuildContext context) {
-    User user = FirebaseAuth.instance.currentUser!;
+    User? user = FirebaseAuth.instance.currentUser;
 
     return SafeArea(
       child: Scaffold(
@@ -26,6 +27,26 @@ class HomeScreen extends StatelessWidget {
                 ),
               );
             } else {
+              // Check if the user is null and handle appropriately
+              if (user == null) {
+                return Center(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      const Text('No user is currently signed in.'),
+                      20.kH,
+                      ElevatedButton(
+                        onPressed: () {
+                          // Navigate to sign-in screen
+                          Navigator.of(context).pushNamed(RouteName.signIn);
+                        },
+                        child: const Text('Go to Sign In'),
+                      ),
+                    ],
+                  ),
+                );
+              }
+
               // Render the main content of HomeScreen
               return SingleChildScrollView(
                 child: SizedBox(
@@ -33,8 +54,8 @@ class HomeScreen extends StatelessWidget {
                   child: Column(
                     children: [
                       TopBarGetTopik(
-                        ontap: () =>
-                            Navigator.of(context).pushNamed(RouteName.userProfile),
+                        ontap: () => Navigator.of(context)
+                            .pushNamed(RouteName.userProfile),
                         user: user,
                       ),
                       Padding(
@@ -52,8 +73,8 @@ class HomeScreen extends StatelessWidget {
                             ),
                             NeumorphContainer(
                               bookTitle: 'assets/images/book2.png',
-                              onTap: () =>
-                                  Navigator.of(context).pushNamed(RouteName.getTopik2),
+                              onTap: () => Navigator.of(context)
+                                  .pushNamed(RouteName.getTopik2),
                             ),
                           ],
                         ),
@@ -66,13 +87,13 @@ class HomeScreen extends StatelessWidget {
                           children: [
                             NeumorphContainer(
                               bookTitle: 'assets/images/book3.png',
-                              onTap: () =>
-                                  Navigator.of(context).pushNamed(RouteName.getTopik3),
+                              onTap: () => Navigator.of(context)
+                                  .pushNamed(RouteName.getTopik3),
                             ),
                             NeumorphContainer(
                               bookTitle: 'assets/images/book4.png',
-                              onTap: () =>
-                                  Navigator.of(context).pushNamed(RouteName.getTopik4),
+                              onTap: () => Navigator.of(context)
+                                  .pushNamed(RouteName.getTopik4),
                             ),
                           ],
                         ),
@@ -80,8 +101,8 @@ class HomeScreen extends StatelessWidget {
                       const Divider(),
                       20.kH,
                       RandomQuizCard(
-                        onTap: () =>
-                            Navigator.of(context).pushNamed(RouteName.randomQuiz),
+                        onTap: () => Navigator.of(context)
+                            .pushNamed(RouteName.randomQuiz),
                       ),
                     ],
                   ),

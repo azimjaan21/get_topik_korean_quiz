@@ -4,7 +4,7 @@
         android:label="Korean Quiz"
         android:name="${applicationName}"
         android:icon="@mipmap/launcher_icon">
-        
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -33,6 +33,10 @@
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
+
+        <meta-data
+            android:name="@string/yandex_mobileads_age_restricted_user"
+            android:value="true" />
     </application>
     <!-- Required to query activities that can process text, see:
          https://developer.android.com/training/package-visibility?hl=en and
