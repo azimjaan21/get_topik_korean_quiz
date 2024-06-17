@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_print
+
 import 'package:get_topik_korean_quiz/tools/file_importer.dart';
 import 'package:url_launcher/url_launcher.dart';
 
