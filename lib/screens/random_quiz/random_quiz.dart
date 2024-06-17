@@ -34,7 +34,7 @@ class _RandomQuizScreenState extends State<RandomQuizScreen> {
     4.3,
     5.1,
     5.2,
-    5.3
+    5.3,
   ];
 
   @override
