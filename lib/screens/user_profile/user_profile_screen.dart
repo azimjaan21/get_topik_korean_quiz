@@ -1,5 +1,6 @@
 // ignore_for_file: avoid_print
 
+import 'package:get_topik_korean_quiz/auth/google_auth.dart';
 import 'package:get_topik_korean_quiz/tools/file_importer.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -27,6 +28,8 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
 
   @override
   Widget build(BuildContext context) {
+    User user = FirebaseAuth.instance.currentUser!;
+
     return SafeArea(
       child: Scaffold(
         backgroundColor: AppColors.topBarColor,
@@ -42,9 +45,7 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
                   ),
                 ),
               ),
-              UserCard(
-                  name: 'User',
-                  email: '${AuthService.auth.currentUser!.email}'),
+              UserCard(user: user),
               30.kH,
               UserOptionsCard(
                 optionText: 'Gettopik',
@@ -103,6 +104,7 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
                   // If user confirmed, sign out
                   if (shouldLogout == true) {
                     await FirebaseAuth.instance.signOut();
+                    await FirebaseServices().googleSignOut();
                     // ignore: use_build_context_synchronously
                     ScaffoldMessenger.of(context).showSnackBar(
                       SnackBar(

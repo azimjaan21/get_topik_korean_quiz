@@ -10,6 +10,8 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    User user = FirebaseAuth.instance.currentUser!;
+
     return SafeArea(
       child: Scaffold(
         backgroundColor: AppColors.background,
@@ -18,7 +20,7 @@ class HomeScreen extends StatelessWidget {
           builder: (context, snapshot) {
             if (snapshot.connectionState == ConnectionState.waiting) {
               // Show loading indicator while waiting
-              return  Center(
+              return Center(
                 child: CircularProgressIndicator(
                   color: AppColors.gettopikColor,
                 ),
@@ -33,6 +35,7 @@ class HomeScreen extends StatelessWidget {
                       TopBarGetTopik(
                         ontap: () =>
                             Navigator.of(context).pushNamed(RouteName.userProfile),
+                        user: user,
                       ),
                       Padding(
                         padding: const EdgeInsets.only(

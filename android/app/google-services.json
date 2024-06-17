@@ -12,7 +12,20 @@
           "package_name": "com.example.get_topik_korean_quiz"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "1041821793868-3k2ssojg3ppbg0ao9n23uffdlm43oaso.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.get_topik_korean_quiz",
+            "certificate_hash": "e9de4eb4c3552b684a4efcded6fe4486a6b12847"
+          }
+        },
+        {
+          "client_id": "1041821793868-3skun5o8drrmg9ntd1c5mot7q6764gun.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyBU_yee5nBidxRhGdoDtmyDeqUQpBIi1mQ"
@@ -20,7 +33,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1041821793868-3skun5o8drrmg9ntd1c5mot7q6764gun.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }

@@ -1,5 +1,8 @@
+// ignore_for_file: use_build_context_synchronously
+
 import 'dart:developer';
 
+import 'package:get_topik_korean_quiz/auth/google_auth.dart';
 import 'package:get_topik_korean_quiz/tools/file_importer.dart';
 
 class SignUpScreen extends StatefulWidget {
@@ -74,7 +77,13 @@ class _SignUpScreenState extends State<SignUpScreen> {
                             GoogleButton(
                               text: 'Google orqali',
                               ontap: () async {
-                                await AuthService().signInWithGoogle();
+                                await FirebaseServices().signInWithGoogle();
+                                Navigator.pushReplacement(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => const HomeScreen(),
+                                  ),
+                                );
                               },
                             ),
                           ],
@@ -109,7 +118,6 @@ class _SignUpScreenState extends State<SignUpScreen> {
       if (user != null) {
         log("User Created Successfully");
 
-        // ignore: use_build_context_synchronously
         goToHome1(context);
       } else {
         log("Something  in SignUp");

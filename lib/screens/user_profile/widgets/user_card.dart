@@ -1,12 +1,16 @@
 import 'package:get_topik_korean_quiz/tools/file_importer.dart';
 
 class UserCard extends StatelessWidget {
-  final String name;
-  final String email;
-  const UserCard({super.key, required this.name, required this.email});
+  final User user;
+
+  const UserCard({super.key, required this.user});
 
   @override
   Widget build(BuildContext context) {
+    String name = user.displayName ?? 'User';
+    String email = user.email ?? 'No Email';
+    String? photoURL = user.photoURL;
+
     return Center(
       child: Container(
         width: MediaQuery.sizeOf(context).width * 0.95,
@@ -21,7 +25,8 @@ class UserCard extends StatelessWidget {
               CircleAvatar(
                 radius: 25,
                 backgroundColor: AppColors.gettopikColor,
-                child: const Icon(Icons.person),
+                backgroundImage: photoURL != null ? NetworkImage(photoURL) : null,
+                child: photoURL == null ? const Icon(Icons.person) : null,
               ),
               15.wH,
               Column(
