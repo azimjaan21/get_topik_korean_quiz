@@ -2,6 +2,7 @@
 
 import 'dart:developer';
 
+import 'package:flutter/cupertino.dart';
 import 'package:get_topik_korean_quiz/auth/google_auth.dart';
 import 'package:get_topik_korean_quiz/tools/file_importer.dart';
 
@@ -63,7 +64,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   ),
                   40.kH,
                   _isLoading
-                      ? CircularProgressIndicator(
+                      ? CupertinoActivityIndicator(
                           color: AppColors.gettopikColor,
                         )
                       : Column(

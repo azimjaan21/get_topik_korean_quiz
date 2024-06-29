@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:get_topik_korean_quiz/tools/file_importer.dart';
 import 'package:percent_indicator/circular_percent_indicator.dart';
 import 'package:yandex_mobileads/mobile_ads.dart';
@@ -49,7 +50,7 @@ class _ResultScreenState extends State<ResultScreen> {
     final adLoader = await _adLoader;
     await adLoader.loadAd(
       adRequestConfiguration:
-          const AdRequestConfiguration(adUnitId: 'R-M-9429559-1'),
+          const AdRequestConfiguration(adUnitId: 'R-M-9429559-2'),
     );
   }
 
@@ -108,7 +109,7 @@ class _ResultScreenState extends State<ResultScreen> {
       return Scaffold(
         backgroundColor: AppColors.background,
         body: Center(
-          child: CircularProgressIndicator(
+          child: CupertinoActivityIndicator(
             color: AppColors.gettopikColor,
           ),
         ),

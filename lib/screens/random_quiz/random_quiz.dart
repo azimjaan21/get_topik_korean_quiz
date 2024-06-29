@@ -1,5 +1,6 @@
 import 'dart:math';
 
+import 'package:flutter/cupertino.dart';
 import 'package:get_topik_korean_quiz/databases/book2_data.dart';
 import 'package:get_topik_korean_quiz/screens/home/result_screen/result_screen.dart';
 import 'package:get_topik_korean_quiz/tools/file_importer.dart';
@@ -108,7 +109,7 @@ class _RandomQuizScreenState extends State<RandomQuizScreen> {
     if (unitQuizData.isEmpty) {
       return const Scaffold(
         body: Center(
-          child: CircularProgressIndicator(), // Placeholder for loading state
+          child: CupertinoActivityIndicator(), // Placeholder for loading state
         ),
       );
     }

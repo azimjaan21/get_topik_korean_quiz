@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:get_topik_korean_quiz/tools/file_importer.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -22,7 +23,7 @@ class HomeScreen extends StatelessWidget {
             if (snapshot.connectionState == ConnectionState.waiting) {
               // Show loading indicator while waiting
               return Center(
-                child: CircularProgressIndicator(
+                child: CupertinoActivityIndicator(
                   color: AppColors.gettopikColor,
                 ),
               );
